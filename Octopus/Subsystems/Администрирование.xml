@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Subsystem uuid="5cdf95e1-8094-40d0-807f-45876ed824cd">
+		<Properties>
+			<Name>Администрирование</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адміністрування</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.Настройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаОПриложении</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьХарактеристикиНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьСерииНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьБазовыеЕдиницыИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьБазовыеЕдиницыИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьХарактеристикиНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьСерииНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьЕдиницыИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДоговорыКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДоговорыКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОчиститьРегистрациюВсехИзменений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДокументИнвентаризация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументИнвентаризация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументПоступление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДокументПоступление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДокументРеализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументРеализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДокументСписание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументСписание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДокументОприходование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументОприходование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДокументПеремещение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументПеремещение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДокументВозвратПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументВозвратПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДокументВозвратОтКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументВозвратОтКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДокументЗаказКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументЗаказКлиента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьДокументЗаказПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументЗаказПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ОбновлятьРегистрыСведенийПриОбмене</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.РазрешитьРедактированиеОтветственного</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.РазрешитьРедактированиеДатыДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ЗапрашиватьКоличествоПриСканировании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИнтервалАвтосохранения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьАвтосохранение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КоличествоДнейДоступностиРедактированияДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.МодельТСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.РежимОбновленияКартинок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КоличествоДнейХраненияДокументовНаУстройстве</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СкладПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПользовательПоУмолчанию</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПарольПользователяДляПодключенияКБазе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПрефиксНумерацииДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИмяПользователяДляПодключенияКБазе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.АдресПодключенияКБазе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.УзелЦентральнойБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИмяСобытияСканирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИмяПоляШтрихкода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьУниверсальныйДокумент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьУниверсальныйДокумент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументТребованиеНакладная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьДокументМаршрутныйЛист</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

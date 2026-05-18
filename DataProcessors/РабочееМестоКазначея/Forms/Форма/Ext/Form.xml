@@ -1,0 +1,1826 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Рабочее место казначея</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Робоче місце казначея</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПериод" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<CheckBoxField name="ЗаВесьПериод" id="80">
+					<DataPath>ЗаВесьПериод</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>За весь период</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>За увесь період</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗаВесьПериодКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ЗаВесьПериодРасширеннаяПодсказка" id="82"/>
+					<Events>
+						<Event name="OnChange">ЗаВесьПериодПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="Период" id="75">
+					<DataPath>Период</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="77"/>
+					<Events>
+						<Event name="OnChange">ПериодПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="ЗаявкиНаРасходованиеЗаполнить" id="56">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Заполнить</CommandName>
+					<ExtendedTooltip name="ЗаявкиНаРасходованиеЗаполнитьРасширеннаяПодсказка" id="57"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтбор" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Відбір
+</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Отбор
+</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>1</Width>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<Table name="КомпановщикНастроекНастройкиОтбор" id="41">
+					<Representation>Tree</Representation>
+					<Autofill>true</Autofill>
+					<Height>9</Height>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>КомпановщикНастроек.Settings.Filter</DataPath>
+					<ViewMode>All</ViewMode>
+					<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+					<ContextMenu name="КомпановщикНастроекНастройкиОтборКонтекстноеМеню" id="42"/>
+					<AutoCommandBar name="КомпановщикНастроекНастройкиОтборКоманднаяПанель" id="43"/>
+					<ExtendedTooltip name="КомпановщикНастроекНастройкиОтборРасширеннаяПодсказка" id="44"/>
+					<SearchStringAddition name="КомпановщикНастроекНастройкиОтборСтрокаПоиска" id="45">
+						<AdditionSource>
+							<Item>КомпановщикНастроекНастройкиОтбор</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпановщикНастроекНастройкиОтборСтрокаПоискаКонтекстноеМеню" id="46"/>
+						<ExtendedTooltip name="КомпановщикНастроекНастройкиОтборСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КомпановщикНастроекНастройкиОтборСостояниеПросмотра" id="48">
+						<AdditionSource>
+							<Item>КомпановщикНастроекНастройкиОтбор</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпановщикНастроекНастройкиОтборСостояниеПросмотраКонтекстноеМеню" id="49"/>
+						<ExtendedTooltip name="КомпановщикНастроекНастройкиОтборСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КомпановщикНастроекНастройкиОтборУправлениеПоиском" id="51">
+						<AdditionSource>
+							<Item>КомпановщикНастроекНастройкиОтбор</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КомпановщикНастроекНастройкиОтборУправлениеПоискомКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="КомпановщикНастроекНастройкиОтборУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+					</SearchControlAddition>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="90">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="91"/>
+			<ChildItems>
+				<Page name="ГруппаЗаявкиБезналичные" id="128">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявки безналичные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Заявки безготівкові</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа заявки безналичные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЗаявкиБезналичныеРасширеннаяПодсказка" id="129"/>
+					<ChildItems>
+						<Table name="ЗаявкиНаРасходованиеБезналичные" id="130">
+							<Representation>List</Representation>
+							<Height>18</Height>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ЗаявкиНаРасходованиеБезналичные</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеКонтекстноеМеню" id="131"/>
+							<AutoCommandBar name="ЗаявкиНаРасходованиеБезналичныеКоманднаяПанель" id="132">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ЗаявкиНаРасходованиеВыделитьВсе1" id="195">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.ВыделитьВсе</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.CheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ЗаявкиНаРасходованиеВыделитьВсе1РасширеннаяПодсказка" id="196"/>
+									</Button>
+									<Button name="ЗаявкиНаРасходованиеЗаполнить2" id="197">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.Заполнить</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнить</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Заповнити</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗаявкиНаРасходованиеЗаполнить2РасширеннаяПодсказка" id="198"/>
+									</Button>
+									<Button name="ЗаявкиНаРасходованиеБезналичныеСоздатьРеестрНаОплатуБезналичные" id="251">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьРеестрНаОплатуБезналичные</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Создать реестр на оплату</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Створити реєстр на сплату</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеСоздатьРеестрНаОплатуБезналичныеРасширеннаяПодсказка" id="252"/>
+									</Button>
+									<Button name="ЗаявкиНаРасходованиеБезналичныеОтправитьПисьмо" id="289">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОтправитьПисьмо</CommandName>
+										<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеОтправитьПисьмоРасширеннаяПодсказка" id="290"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеРасширеннаяПодсказка" id="133"/>
+							<SearchStringAddition name="ЗаявкиНаРасходованиеБезналичныеСтрокаПоиска" id="134">
+								<AdditionSource>
+									<Item>ЗаявкиНаРасходованиеБезналичные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеСтрокаПоискаКонтекстноеМеню" id="135"/>
+								<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеСтрокаПоискаРасширеннаяПодсказка" id="136"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗаявкиНаРасходованиеБезналичныеСостояниеПросмотра" id="137">
+								<AdditionSource>
+									<Item>ЗаявкиНаРасходованиеБезналичные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеСостояниеПросмотраКонтекстноеМеню" id="138"/>
+								<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеСостояниеПросмотраРасширеннаяПодсказка" id="139"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗаявкиНаРасходованиеБезналичныеУправлениеПоиском" id="140">
+								<AdditionSource>
+									<Item>ЗаявкиНаРасходованиеБезналичные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеУправлениеПоискомКонтекстноеМеню" id="141"/>
+								<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеУправлениеПоискомРасширеннаяПодсказка" id="142"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ЗаявкиНаРасходованиеВыбор</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="ЗаявкиНаРасходованиеБезналичныеИспользовать" id="201">
+									<DataPath>ЗаявкиНаРасходованиеБезналичные.Использовать</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеИспользоватьКонтекстноеМеню" id="202"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеИспользоватьРасширеннаяПодсказка" id="203"/>
+								</CheckBoxField>
+								<ColumnGroup name="ЗаявкиНаРасходованиеБезналичныеГруппа1" id="210">
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеГруппа1РасширеннаяПодсказка" id="211"/>
+									<ChildItems>
+										<InputField name="ЗаявкиНаРасходованиеБезналичныеФормаОплаты" id="204">
+											<DataPath>ЗаявкиНаРасходованиеБезналичные.ФормаОплаты</DataPath>
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Форма оплаты
+</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Форма сплати</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеФормаОплатыКонтекстноеМеню" id="205"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеФормаОплатыРасширеннаяПодсказка" id="206"/>
+										</InputField>
+										<LabelField name="ЗаявкиНаРасходованиеБезналичныеНомерРеестра" id="207">
+											<DataPath>ЗаявкиНаРасходованиеБезналичные.НомерРеестра</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер реестра
+</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Номер реестру</v8:content>
+												</v8:item>
+											</Title>
+											<TitleBackColor>#FF99CC</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<CellHyperlink>true</CellHyperlink>
+											<Hiperlink>true</Hiperlink>
+											<BackColor>#FF99CC</BackColor>
+											<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеНомерРеестраКонтекстноеМеню" id="208"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеНомерРеестраРасширеннаяПодсказка" id="209"/>
+										</LabelField>
+										<InputField name="ЗаявкиНаРасходованиеБезналичныеРеестрСтатус" id="273">
+											<DataPath>ЗаявкиНаРасходованиеБезналичные.Реестр.Статус</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеРеестрСтатусКонтекстноеМеню" id="274"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеРеестрСтатусРасширеннаяПодсказка" id="275"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ЗаявкиНаРасходованиеБезналичныеГруппа2" id="279">
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеГруппа2РасширеннаяПодсказка" id="280"/>
+									<ChildItems>
+										<InputField name="ЗаявкиНаРасходованиеБезналичныеДокументНомер" id="255">
+											<DataPath>ЗаявкиНаРасходованиеБезналичные.Документ.Number</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер заявки</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Номер заявки</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеДокументНомерКонтекстноеМеню" id="256"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеДокументНомерРасширеннаяПодсказка" id="257"/>
+										</InputField>
+										<InputField name="ЗаявкиНаРасходованиеБезналичныеСтатус" id="276">
+											<DataPath>ЗаявкиНаРасходованиеБезналичные.Статус</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеСтатусКонтекстноеМеню" id="277"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеСтатусРасширеннаяПодсказка" id="278"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ЗаявкиНаРасходованиеБезналичныеВидОперации" id="212">
+									<DataPath>ЗаявкиНаРасходованиеБезналичные.ВидОперации</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид операции</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Вид операції</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеВидОперацииКонтекстноеМеню" id="213"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеВидОперацииРасширеннаяПодсказка" id="214"/>
+								</InputField>
+								<InputField name="ЗаявкиНаРасходованиеБезналичныеСуммаДокумента" id="215">
+									<DataPath>ЗаявкиНаРасходованиеБезналичные.СуммаДокумента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма документа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума документа</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>#CCFFFF</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<BackColor>#CCFFFF</BackColor>
+									<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеСуммаДокументаКонтекстноеМеню" id="216"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеСуммаДокументаРасширеннаяПодсказка" id="217"/>
+								</InputField>
+								<InputField name="ЗаявкиНаРасходованиеБезналичныеОстатокКОплате" id="267">
+									<DataPath>ЗаявкиНаРасходованиеБезналичные.ОстатокКОплате</DataPath>
+									<TitleBackColor>#FFFF99</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<BackColor>#FFFF99</BackColor>
+									<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеОстатокКОплатеКонтекстноеМеню" id="268"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеОстатокКОплатеРасширеннаяПодсказка" id="269"/>
+								</InputField>
+								<InputField name="ЗаявкиНаРасходованиеБезналичныеВалюта" id="218">
+									<DataPath>ЗаявкиНаРасходованиеБезналичные.Валюта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеВалютаКонтекстноеМеню" id="219"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеВалютаРасширеннаяПодсказка" id="220"/>
+								</InputField>
+								<InputField name="ЗаявкиНаРасходованиеБезналичныеДатаУтверждения" id="221">
+									<DataPath>ЗаявкиНаРасходованиеБезналичные.ДатаУтверждения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата утверждения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дата погодження</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеДатаУтвержденияКонтекстноеМеню" id="222"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеДатаУтвержденияРасширеннаяПодсказка" id="223"/>
+								</InputField>
+								<ColumnGroup name="ЗаявкиНаРасходованиеБезналичныеДаты" id="245">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заявки на расходование безналичные даты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заявки на расходование безналичные даты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеДатыРасширеннаяПодсказка" id="246"/>
+									<ChildItems>
+										<InputField name="ЗаявкиНаРасходованиеБезналичныеДатаПлатежа" id="224">
+											<DataPath>ЗаявкиНаРасходованиеБезналичные.ДатаПлатежа</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата расхода</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Дата витрати</v8:content>
+												</v8:item>
+											</Title>
+											<TitleBackColor>#CCFFFF</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<BackColor>#CCFFFF</BackColor>
+											<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеДатаПлатежаКонтекстноеМеню" id="225"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеДатаПлатежаРасширеннаяПодсказка" id="226"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ЗаявкиНаРасходованиеБезналичныеБанкГруппа" id="247">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заявки на расходование безналичные банк группа</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заявки на расходование безналичные банк группа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеБанкГруппаРасширеннаяПодсказка" id="248"/>
+									<ChildItems>
+										<InputField name="ЗаявкиНаРасходованиеБезналичныеБанк" id="230">
+											<DataPath>ЗаявкиНаРасходованиеБезналичные.Банк</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеБанкКонтекстноеМеню" id="231"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеБанкРасширеннаяПодсказка" id="232"/>
+										</InputField>
+										<InputField name="ЗаявкиНаРасходованиеБезналичныеБанковскийСчет" id="227">
+											<DataPath>ЗаявкиНаРасходованиеБезналичные.БанковскийСчет</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеБанковскийСчетКонтекстноеМеню" id="228"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеБанковскийСчетРасширеннаяПодсказка" id="229"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ЗаявкиНаРасходованиеБезналичныеБанковскийСчетПодразделение" id="249">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заявки на расходование безналичные банковский счет подразделение</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заявки на расходование безналичные банковский счет подразделение</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеБанковскийСчетПодразделениеРасширеннаяПодсказка" id="250"/>
+									<ChildItems>
+										<InputField name="ЗаявкиНаРасходованиеБезналичныеПодразделение" id="233">
+											<DataPath>ЗаявкиНаРасходованиеБезналичные.Подразделение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеПодразделениеКонтекстноеМеню" id="234"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеПодразделениеРасширеннаяПодсказка" id="235"/>
+										</InputField>
+										<InputField name="ЗаявкиНаРасходованиеБезналичныеСтатьяДДС" id="236">
+											<DataPath>ЗаявкиНаРасходованиеБезналичные.СтатьяДДС</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеСтатьяДДСКонтекстноеМеню" id="237"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеСтатьяДДСРасширеннаяПодсказка" id="238"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ЗаявкиНаРасходованиеБезналичныеКонтрагент" id="239">
+									<DataPath>ЗаявкиНаРасходованиеБезналичные.Контрагент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеКонтрагентКонтекстноеМеню" id="240"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеКонтрагентРасширеннаяПодсказка" id="241"/>
+								</InputField>
+								<LabelField name="ЗаявкиНаРасходованиеБезналичныеДокумент" id="242">
+									<DataPath>ЗаявкиНаРасходованиеБезналичные.Документ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CellHyperlink>true</CellHyperlink>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="ЗаявкиНаРасходованиеБезналичныеДокументКонтекстноеМеню" id="243"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеБезналичныеДокументРасширеннаяПодсказка" id="244"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаЗаявкиНаличные" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявки наличные</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Заявки готівкові</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа заявки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа заявки наличные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЗаявкиНаличныеРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<Table name="ЗаявкиНаРасходованиеНаличные" id="1">
+							<Representation>List</Representation>
+							<Height>18</Height>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ЗаявкиНаРасходованиеНаличные</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗаявкиНаРасходованиеНаличныеКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ЗаявкиНаРасходованиеНаличныеКоманднаяПанель" id="3">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ЗаявкиНаРасходованиеВыделитьВсе" id="126">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.ВыделитьВсе</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.CheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ЗаявкиНаРасходованиеВыделитьВсеРасширеннаяПодсказка" id="127"/>
+									</Button>
+									<Button name="ЗаявкиНаРасходованиеЗаполнить1" id="83">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.Заполнить</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнить</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Заповнити</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗаявкиНаРасходованиеЗаполнить1РасширеннаяПодсказка" id="84"/>
+									</Button>
+									<Button name="ЗаявкиНаРасходованиеНаличныеСоздатьРеестрНаОплатуНаличные" id="253">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьРеестрНаОплатуНаличные</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Создать реестр на оплату</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>uk</v8:lang>
+												<v8:content>Створити реєстр на сплату</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеСоздатьРеестрНаОплатуНаличныеРасширеннаяПодсказка" id="254"/>
+									</Button>
+									<Button name="ЗаявкиНаРасходованиеНаличныеОтправитьПисьмо" id="291">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОтправитьПисьмо</CommandName>
+										<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеОтправитьПисьмоРасширеннаяПодсказка" id="292"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ЗаявкиНаРасходованиеНаличныеСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>ЗаявкиНаРасходованиеНаличные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаявкиНаРасходованиеНаличныеСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗаявкиНаРасходованиеНаличныеСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>ЗаявкиНаРасходованиеНаличные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаявкиНаРасходованиеНаличныеСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗаявкиНаРасходованиеНаличныеУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>ЗаявкиНаРасходованиеНаличные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗаявкиНаРасходованиеНаличныеУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ЗаявкиНаРасходованиеВыбор</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="ЗаявкиНаРасходованиеИспользовать" id="38">
+									<DataPath>ЗаявкиНаРасходованиеНаличные.Использовать</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>  </v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗаявкиНаРасходованиеИспользоватьКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеИспользоватьРасширеннаяПодсказка" id="40"/>
+								</CheckBoxField>
+								<ColumnGroup name="ЗаявкиНаРасходованиеГруппа4" id="124">
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеГруппа4РасширеннаяПодсказка" id="125"/>
+									<ChildItems>
+										<LabelField name="ЗаявкиНаРасходованиеФормаОплаты" id="121">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.ФормаОплаты</DataPath>
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Форма оплаты</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Форма оплати</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеФормаОплатыКонтекстноеМеню" id="122"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеФормаОплатыРасширеннаяПодсказка" id="123"/>
+										</LabelField>
+										<LabelField name="ЗаявкиНаРасходованиеНомерРеестра" id="87">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.НомерРеестра</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер реестра</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Номер реєстру</v8:content>
+												</v8:item>
+											</Title>
+											<TitleBackColor>#FF99CC</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<CellHyperlink>true</CellHyperlink>
+											<Width>14</Width>
+											<Hiperlink>true</Hiperlink>
+											<BackColor>#FF99CC</BackColor>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ContextMenu name="ЗаявкиНаРасходованиеНомерРеестраКонтекстноеМеню" id="88"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеНомерРеестраРасширеннаяПодсказка" id="89"/>
+										</LabelField>
+										<InputField name="ЗаявкиНаРасходованиеНаличныеРеестрСтатус" id="281">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.Реестр.Статус</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеНаличныеРеестрСтатусКонтекстноеМеню" id="282"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеРеестрСтатусРасширеннаяПодсказка" id="283"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ЗаявкиНаРасходованиеНаличныеГруппа1" id="284">
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеГруппа1РасширеннаяПодсказка" id="285"/>
+									<ChildItems>
+										<InputField name="ЗаявкиНаРасходованиеНаличныеДокументНомер" id="258">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.Документ.Number</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер заявки</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Номер заявки</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеНаличныеДокументНомерКонтекстноеМеню" id="259"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеДокументНомерРасширеннаяПодсказка" id="260"/>
+										</InputField>
+										<InputField name="ЗаявкиНаРасходованиеНаличныеСтатус" id="286">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.Статус</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеНаличныеСтатусКонтекстноеМеню" id="287"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеСтатусРасширеннаяПодсказка" id="288"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ЗаявкиНаРасходованиеВидОперации" id="14">
+									<DataPath>ЗаявкиНаРасходованиеНаличные.ВидОперации</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вид операции</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Вид операції</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаявкиНаРасходованиеВидОперацииКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеВидОперацииРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="ЗаявкиНаРасходованиеСуммаДокумента" id="23">
+									<DataPath>ЗаявкиНаРасходованиеНаличные.СуммаДокумента</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма документа
+</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Сума документу</v8:content>
+										</v8:item>
+									</Title>
+									<TitleBackColor>#CCFFFF</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<BackColor>#CCFFFF</BackColor>
+									<ContextMenu name="ЗаявкиНаРасходованиеСуммаДокументаКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеСуммаДокументаРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ЗаявкиНаРасходованиеНаличныеОстатокКОплате" id="270">
+									<DataPath>ЗаявкиНаРасходованиеНаличные.ОстатокКОплате</DataPath>
+									<TitleBackColor>#FFFF99</TitleBackColor>
+									<EditMode>EnterOnInput</EditMode>
+									<BackColor>#FFFF99</BackColor>
+									<ContextMenu name="ЗаявкиНаРасходованиеНаличныеОстатокКОплатеКонтекстноеМеню" id="271"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеНаличныеОстатокКОплатеРасширеннаяПодсказка" id="272"/>
+								</InputField>
+								<ColumnGroup name="ЗаявкиНаРасходованиеГруппа3" id="70">
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеГруппа3РасширеннаяПодсказка" id="71"/>
+									<ChildItems>
+										<InputField name="ЗаявкиНаРасходованиеВалюта" id="26">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.Валюта</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Валюта</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Валюта</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеВалютаКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеВалютаРасширеннаяПодсказка" id="28"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ЗаявкиНаРасходованиеДатаУтверждения" id="20">
+									<DataPath>ЗаявкиНаРасходованиеНаличные.ДатаУтверждения</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата утверждения</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Дата погодження</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<BackColor>#99CC00</BackColor>
+									<ContextMenu name="ЗаявкиНаРасходованиеДатаУтвержденияКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеДатаУтвержденияРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<ColumnGroup name="ЗаявкиНаРасходованиеДаты" id="64">
+									<Title>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Заявки на расходование даты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Заявки на расходование даты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеДатыРасширеннаяПодсказка" id="65"/>
+									<ChildItems>
+										<InputField name="ЗаявкиНаРасходованиеДатаРасхода" id="17">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.ДатаПлатежа</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата расхода </v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Дата витрати</v8:content>
+												</v8:item>
+											</Title>
+											<TitleBackColor>#CCFFFF</TitleBackColor>
+											<EditMode>EnterOnInput</EditMode>
+											<BackColor>#CCFFFF</BackColor>
+											<ContextMenu name="ЗаявкиНаРасходованиеДатаРасходаКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеДатаРасходаРасширеннаяПодсказка" id="19"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ЗаявкиНаРасходованиеГруппа2" id="66">
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеГруппа2РасширеннаяПодсказка" id="67"/>
+									<ChildItems>
+										<InputField name="ЗаявкиНаРасходованиеБанковскийСчет" id="29">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.БанковскийСчет</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Банковский счет</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Банківський рахунок</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеБанковскийСчетКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБанковскийСчетРасширеннаяПодсказка" id="31"/>
+										</InputField>
+										<InputField name="ЗаявкиНаРасходованиеБанк" id="35">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.Банк</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеБанкКонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеБанкРасширеннаяПодсказка" id="37"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ЗаявкиНаРасходованиеГруппа1" id="68">
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеГруппа1РасширеннаяПодсказка" id="69"/>
+									<ChildItems>
+										<InputField name="ЗаявкиНаРасходованиеПодразделение" id="72">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.Подразделение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеПодразделениеКонтекстноеМеню" id="73"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеПодразделениеРасширеннаяПодсказка" id="74"/>
+										</InputField>
+										<InputField name="ЗаявкиНаРасходованиеСтатьяДДС" id="32">
+											<DataPath>ЗаявкиНаРасходованиеНаличные.СтатьяДДС</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаявкиНаРасходованиеСтатьяДДСКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="ЗаявкиНаРасходованиеСтатьяДДСРасширеннаяПодсказка" id="34"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<InputField name="ЗаявкиНаРасходованиеКонтрагент" id="58">
+									<DataPath>ЗаявкиНаРасходованиеНаличные.Контрагент</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Контрагент</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Контрагент</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗаявкиНаРасходованиеКонтрагентКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеКонтрагентРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<LabelField name="ЗаявкиНаРасходованиеДокумент" id="61">
+									<DataPath>ЗаявкиНаРасходованиеНаличные.Документ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документ
+</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Документ</v8:content>
+										</v8:item>
+									</Title>
+									<CellHyperlink>true</CellHyperlink>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="ЗаявкиНаРасходованиеДокументКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ЗаявкиНаРасходованиеДокументРасширеннаяПодсказка" id="63"/>
+									<Events>
+										<Event name="OnChange">ЗаявкиНаРасходованиеДокументНажатие</Event>
+										<Event name="URLProcessing">ЗаявкиНаРасходованиеДокументНажатие</Event>
+										<Event name="Click">ЗаявкиНаРасходованиеДокументНажатие</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРеестры" id="94">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реестры
+</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реєстри</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Группа реестры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРеестрыРасширеннаяПодсказка" id="95"/>
+					<ChildItems>
+						<Table name="РеестрыНаОплату" id="96">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>РеестрыНаОплату</DataPath>
+							<RowPictureDataPath>РеестрыНаОплату.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="РеестрыНаОплатуКонтекстноеМеню" id="97">
+								<Autofill>false</Autofill>
+							</ContextMenu>
+							<AutoCommandBar name="РеестрыНаОплатуКоманднаяПанель" id="98">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РеестрыНаОплатуРасширеннаяПодсказка" id="99"/>
+							<SearchStringAddition name="РеестрыНаОплатуСтрокаПоиска" id="100">
+								<AdditionSource>
+									<Item>РеестрыНаОплату</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РеестрыНаОплатуСтрокаПоискаКонтекстноеМеню" id="101"/>
+								<ExtendedTooltip name="РеестрыНаОплатуСтрокаПоискаРасширеннаяПодсказка" id="102"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РеестрыНаОплатуСостояниеПросмотра" id="103">
+								<AdditionSource>
+									<Item>РеестрыНаОплату</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РеестрыНаОплатуСостояниеПросмотраКонтекстноеМеню" id="104"/>
+								<ExtendedTooltip name="РеестрыНаОплатуСостояниеПросмотраРасширеннаяПодсказка" id="105"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РеестрыНаОплатуУправлениеПоиском" id="106">
+								<AdditionSource>
+									<Item>РеестрыНаОплату</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РеестрыНаОплатуУправлениеПоискомКонтекстноеМеню" id="107"/>
+								<ExtendedTooltip name="РеестрыНаОплатуУправлениеПоискомРасширеннаяПодсказка" id="108"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<PictureField name="РеестрыНаОплатуСтандартнаяКартинка" id="264">
+									<DataPath>РеестрыНаОплату.DefaultPicture</DataPath>
+									<Visible>false</Visible>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="РеестрыНаОплатуСтандартнаяКартинкаКонтекстноеМеню" id="265"/>
+									<ExtendedTooltip name="РеестрыНаОплатуСтандартнаяКартинкаРасширеннаяПодсказка" id="266"/>
+								</PictureField>
+								<LabelField name="РеестрыНаОплатуДата" id="109">
+									<DataPath>РеестрыНаОплату.Date</DataPath>
+									<ContextMenu name="РеестрыНаОплатуДатаКонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="РеестрыНаОплатуДатаРасширеннаяПодсказка" id="111"/>
+								</LabelField>
+								<LabelField name="РеестрыНаОплатуНомер" id="112">
+									<DataPath>РеестрыНаОплату.Number</DataPath>
+									<ContextMenu name="РеестрыНаОплатуНомерКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="РеестрыНаОплатуНомерРасширеннаяПодсказка" id="114"/>
+								</LabelField>
+								<LabelField name="РеестрыНаОплатуСтатус" id="261">
+									<DataPath>РеестрыНаОплату.Статус</DataPath>
+									<ContextMenu name="РеестрыНаОплатуСтатусКонтекстноеМеню" id="262"/>
+									<ExtendedTooltip name="РеестрыНаОплатуСтатусРасширеннаяПодсказка" id="263"/>
+								</LabelField>
+								<LabelField name="РеестрыНаОплатуФормаОплаты" id="118">
+									<DataPath>РеестрыНаОплату.ФормаОплаты</DataPath>
+									<ContextMenu name="РеестрыНаОплатуФормаОплатыКонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="РеестрыНаОплатуФормаОплатыРасширеннаяПодсказка" id="120"/>
+								</LabelField>
+								<LabelField name="РеестрыНаОплатуОтветственный" id="115">
+									<DataPath>РеестрыНаОплату.Ответственный</DataPath>
+									<ContextMenu name="РеестрыНаОплатуОтветственныйКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="РеестрыНаОплатуОтветственныйРасширеннаяПодсказка" id="117"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоКазначея</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ЗаявкиНаРасходованиеНаличные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заявки на расходование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявки на расходование наличные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВидОперации" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вид операции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыОперацийЗаявкиНаРасходование</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаПлатежа" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата платежа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дата платежа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаУтверждения" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дата утверждения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаДокумента" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сумма документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Валюта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="БанковскийСчет" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Банковский счет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.БанковскиеСчета</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатьяДДС" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья ДДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стаття РГК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтатьиДвиженияДенежныхСредств</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Банк" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Банк</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Банки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Использовать" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Контрагент" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Документ" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаявкаНаРасходованиеСредств</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерРеестра" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Номер реестра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Реестр" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реестр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.РеестрПлатежей</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФормаОплаты" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Форма оплаты</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыДенежныхСредств</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОстатокКОплате" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остаток к оплате</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Статус" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыЗаявокНаРасходованиеДенежныхСредств</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КомпановщикНастроек" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Компановщик настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаВесьПериод" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>За весь период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РеестрыНаОплату" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Реестры на оплату</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДокументРеестрПлатежей.Ссылка,
+	ДокументРеестрПлатежей.ПометкаУдаления,
+	ДокументРеестрПлатежей.Номер,
+	ДокументРеестрПлатежей.Дата,
+	ДокументРеестрПлатежей.Проведен,
+	ДокументРеестрПлатежей.Ответственный,
+	ДокументРеестрПлатежей.Статус,
+	ДокументРеестрПлатежей.ФормаОплаты,
+	ДокументРеестрПлатежей.МоментВремени,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ РеестрПлатежейЗаявкиНаРасходованиеДС.Заявка.Статус) КАК КоличествоСтатусов,
+	МАКСИМУМ(РеестрПлатежейЗаявкиНаРасходованиеДС.Заявка.Статус) КАК ОсновнойСтатус
+ИЗ
+	Документ.РеестрПлатежей КАК ДокументРеестрПлатежей
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.РеестрПлатежей.ЗаявкиНаРасходованиеДС КАК РеестрПлатежейЗаявкиНаРасходованиеДС
+		ПО (РеестрПлатежейЗаявкиНаРасходованиеДС.Ссылка = ДокументРеестрПлатежей.Ссылка)
+
+СГРУППИРОВАТЬ ПО
+	ДокументРеестрПлатежей.Ссылка,
+	ДокументРеестрПлатежей.ПометкаУдаления,
+	ДокументРеестрПлатежей.Номер,
+	ДокументРеестрПлатежей.Дата,
+	ДокументРеестрПлатежей.Проведен,
+	ДокументРеестрПлатежей.Ответственный,
+	ДокументРеестрПлатежей.Статус,
+	ДокументРеестрПлатежей.ФормаОплаты,
+	ДокументРеестрПлатежей.МоментВремени</QueryText>
+				<MainTable>Document.РеестрПлатежей</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>AndGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">КоличествоСтатусов</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ОсновнойСтатус</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаявокНаРасходованиеДенежныхСредств.Оплачена</dcsset:right>
+									</dcsset:item>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#99CC00</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>AndGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">КоличествоСтатусов</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:decimal">2</dcsset:right>
+									</dcsset:item>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#FFCC00</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>AndGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">КоличествоСтатусов</dcsset:left>
+										<dcsset:comparisonType>Equal</dcsset:comparisonType>
+										<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">ОсновнойСтатус</dcsset:left>
+										<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+										<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаявокНаРасходованиеДенежныхСредств.Оплачена</dcsset:right>
+									</dcsset:item>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#FFCC00</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЗаявкиНаРасходованиеБезналичные" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заявки на расходование</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявки на расходование наличные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВидОперации" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Вид операции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыОперацийЗаявкиНаРасходование</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаПлатежа" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата платежа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дата платежа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаУтверждения" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Дата утверждения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаДокумента" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сумма документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Валюта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="БанковскийСчет" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Банковский счет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.БанковскиеСчета</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СтатьяДДС" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья ДДС</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Стаття РГК</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтатьиДвиженияДенежныхСредств</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Банк" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Банк</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Банки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Использовать" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Контрагент" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Документ" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаявкаНаРасходованиеСредств</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерРеестра" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Номер реестра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Реестр" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Реестр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.РеестрПлатежей</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФормаОплаты" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Форма оплаты</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыДенежныхСредств</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОстатокКОплате" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остаток к оплате</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Статус" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыЗаявокНаРасходованиеДенежныхСредств</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+		</Command>
+		<Command name="СоздатьРеестрНаОплатуНаличные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать реестр на оплату наличные</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити реєстр на оплату</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Создать реестр на оплату</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать реестр на оплату наличные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьРеестрНаОплатуНаличные</Action>
+		</Command>
+		<Command name="ВыделитьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Выделить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Выделить все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыделитьВсе</Action>
+		</Command>
+		<Command name="СнятьВсе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьВсе</Action>
+		</Command>
+		<Command name="СоздатьРеестрНаОплатуБезналичные" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать реестр на оплату безналичные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать реестр на оплату безналичные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьРеестрНаОплатуБезналичные</Action>
+		</Command>
+		<Command name="ОтправитьПисьмо" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить письмо</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Надіслати лист</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить письмо</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьПисьмоЗаявкиБезнал</Action>
+		</Command>
+		<Command name="ОтправитьПисьмоНал" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить письмо</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Надіслати лист</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить письмо</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьПисьмоЗаявкиНал</Action>
+		</Command>
+		<Command name="ОтправитьПисьмоРеестр" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить письмо</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Надіслати лист</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить письмо</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьПисьмоЗаявкиРеестр</Action>
+		</Command>
+	</Commands>
+</Form>

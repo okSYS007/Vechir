@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></meta><style type="text/css">H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 11px 0px 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "MS Shell Dlg", Verdana, Arial, sans-serif; COLOR: #898477; FONT-SIZE: 9px; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+BODY {
+	FONT-FAMILY: "MS Shell Dlg", Verdana, Arial, sans-serif; BACKGROUND: #fffbf0; FONT-SIZE: 8px
+}
+P {
+	PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-LEFT: 13px; PADDING-RIGHT: 5px; FONT-FAMILY: "MS Shell Dlg", Verdana, Arial, sans-serif; FONT-SIZE: 9px; PADDING-TOP: 5px
+}
+A {
+	COLOR: #3366ff
+}
+#example {
+	BORDER-BOTTOM: #898477 1px solid; POSITION: absolute; BORDER-LEFT: #898477 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-FAMILY: "MS Shell Dlg", Verdana, Arial, sans-serif; BACKGROUND: #ffffff; VISIBILITY: hidden; COLOR: #898477; FONT-SIZE: 9px; BORDER-TOP: #898477 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #898477 1px solid; PADDING-TOP: 5px
+}
+</style><script type="text/javascript">
+
+var isTooltipVisible = false;
+
+function drawTooltip(e) {
+	if (isTooltipVisible) {
+	
+		var offsetX = 18;
+		var offsetY = 8;
+	
+		var oTooltip = document.getElementById('example');
+		var oImage   = document.getElementById('image');
+		oImage.src   = document.location.href + "_files/" + event.srcElement.id + ".gif";
+
+		 if(e && e.pageX != null) {
+	       mouseX = e.pageX;
+	       mouseY = e.pageY;
+	     }
+	     else if(event && event.clientX != null) {
+	     
+			if(window.pageXOffset) 
+				screenX = window.pageXOffset;
+			else if(document.documentElement && document.documentElement.scrollLeft)
+				screenX = document.documentElement.scrollLeft;
+			else if(document.body && document.body.scrollLeft) 
+				screenX = document.body.scrollLeft;
+		  	else
+		  		screenX = 0;
+	     
+			mouseX = event.clientX + screenX;
+
+			if(window.pageYOffset)
+		 		screenY = window.pageYOffset;
+		 	else if(document.documentElement && document.documentElement.scrollTop)
+		  		screenY = document.documentElement.scrollTop;
+			else if(document.body && document.body.scrollTop)
+		  		screenY = document.body.scrollTop;
+		  	else
+		  		screenY = 0;
+			
+			mouseY = event.clientY + screenY;
+	     }	
+
+		var leftedge =  (offsetX < 0) ? offsetxpoint * (-1) : -1000;
+		var rightedge = document.body.clientWidth - event.clientX - offsetX;
+		
+		if (rightedge < oTooltip.offsetWidth)
+			oTooltip.style.left = document.body.scrollLeft + event.clientX - oTooltip.offsetWidth + "px"
+		else if (mouseX < leftedge)
+			oTooltip.style.left = "5px";
+		else
+			oTooltip.style.left = mouseX + offsetX + "px";
+		
+		var bottomedge = document.body.clientHeight - event.clientY - offsetY;
+		if (bottomedge < oTooltip.offsetHeight)
+			oTooltip.style.top = document.body.scrollTop + event.clientY - oTooltip.offsetHeight - offsetY +"px"
+		else
+			oTooltip.style.top = mouseY + offsetY + "px";
+
+		oTooltip.style.visibility = "visible";
+	}
+}	
+
+function showTooltip(event) {
+	isTooltipVisible = true;
+	drawTooltip(event);
+}	
+
+function hideTooltip(id){
+	var oTooltip = document.getElementById('example');
+	oTooltip.style.visibility = "hidden";
+	isTooltipVisible = false;
+}
+
+document.onmousemove = drawTooltip;
+	   
+</script></head><body bottommargin="0" scroll="auto">
+<div id="example" style="LEFT: 150px; TOP: 394px; VISIBILITY: hidden">Зразок звіту<br><br><img id="image" src="about:blank_files/ЗадолженностьПоставщикам.gif"></img></div>
+<h1>Загальні показники</h1>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="Продажи" href="">Продажі</a></p>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ДоходыРасходы" href="">Доходи та витрати (прибуток/збиток)</a> </p>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ОборотныеСредства" href="">Обігові кошти</a></p>
+<h1>Кошти</h1>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ОстаткиДенежныхСредств" href="">Залишки коштів</a> </p>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ПоступлениеДенежныхСредств" href="">Надходження коштів</a> </p>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="РасходДенежныхСредств" href="">Витрата коштів</a></p>
+<h1>Розрахунки з покупцями</h1>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ДинамикаЗадолженностиПокупателей" href="">Динаміка заборгованості покупців</a> </p>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ЗадолженностьПокупателей" href="">Заборгованість покупців</a> </p>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ЗадолженностьПокупателейПоСрокамДолга" href="">Заборгованість покупців по строках боргу</a> </p>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ПросроченнаяЗадолженностьПокупателей" href="">Прострочена заборгованість покупців</a></p>
+<h1>Розрахунки з постачальниками</h1>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ДинамикаЗадолженностиПоставщикам" href="">Динаміка заборгованості постачальникам</a> </p>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ЗадолженностьПоставщикам" href="">Заборгованість постачальникам</a></p>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ЗадолженностьПоставщикамПоСрокамДолга" href="">Заборгованість постачальникам по строках боргу</a> </p>
+<p><a onmouseover="showTooltip(event);" onmouseout="hideTooltip();" id="ПросроченнаяЗадолженностьПоставщикам" href="">Прострочена заборгованість постачальникам</a></p><img style="DISPLAY: none" src="_files/ДоходыРасходы.gif"></img><img style="DISPLAY: none" src="_files/ДинамикаЗадолженностиПокупателей.gif"></img><img style="DISPLAY: none" src="_files/ЗадолженностьПокупателейПоСрокамДолга.gif"></img><img style="DISPLAY: none" src="_files/ДинамикаЗадолженностиПоставщикам.gif"></img><img style="DISPLAY: none" src="_files/ЗадолженностьПокупателей.gif"></img><img style="DISPLAY: none" src="_files/ЗадолженностьПоставщикам.gif"></img><img style="DISPLAY: none" src="_files/ОборотныеСредства.gif"></img><img style="DISPLAY: none" src="_files/ОстаткиДенежныхСредств.gif"></img><img style="DISPLAY: none" src="_files/ПоступлениеДенежныхСредств.gif"></img><img style="DISPLAY: none" src="_files/Продажи.gif"></img><img style="DISPLAY: none" src="_files/ПросроченнаяЗадолженностьПокупателей.gif"></img><img style="DISPLAY: none" src="_files/РасходДенежныхСредств.gif"></img><img style="DISPLAY: none" src="_files/ПросроченнаяЗадолженностьПоставщикам.gif"></img><img style="DISPLAY: none" src="_files/ЗадолженностьПоставщикамПоСрокамДолга.gif"></img></body></html>

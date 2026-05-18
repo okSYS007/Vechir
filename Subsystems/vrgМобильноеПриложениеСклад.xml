@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Subsystem uuid="93e30d9a-5200-4d37-b68d-a4217698056a">
+		<Properties>
+			<Name>vrgМобильноеПриложениеСклад</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(VRG) Мобильное приложение склад</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.MobileClientIntegration</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.vrgТипыОбменаДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.vrgОстаткиЗаказовПоставщикамМобильные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.vrgОстаткиНаСкладахМобильныеСклад</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.vrgИсторияОбменаДаннымиСМобильнымиУстройствами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.vrgПроцедурыОбменаДаннымиСМобильнымиУстройствамиСклад</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.vrgМобильныеСклад</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.vrgPortableDataTerminalExchange</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.vrgЗаполнениеОбработкаДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.vrgПриЗаписиМобильногоДокумента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.vrgЦеныНоменклатурыМобильныеСклад</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.vrgСоответствияМобильныхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.vrgНастройкиМобильныхУстройств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.vrgВариантыОтображенияКоманд</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.vrg_ИспользуетсяМобильноеПриложениеOctopus</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.vrgОбменДаннымиСМобильнымиПриложениямиСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.vrgПередЗаписьюСправочникаДляОбменаСМобильнымПриложениемOctopus</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.vrgПриЗаписиСправочникаДляОбменаСМобильнымПриложениемOctopus</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.vrgПередЗаписьюРегистраСведенийДляОбменаСМобильнымПриложениемOctopus</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgИнвентаризацияМобильная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgПеремещениеМобильное</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgПоступлениеМобильное</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgСписаниеМобильное</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgРеализацияМобильная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgВозвратМобильный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgВозвратПоставщикуМобильный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgЗаказПоставщикуМобильный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgЗаказКлиентаМобильный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgОприходованиеМобильное</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.vrg_ИспользоватьХозрасчетныйДляОстатковOctopus</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.vrgУниверсальныйДокументМобильный</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

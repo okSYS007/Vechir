@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Enum uuid="24c729df-0db0-40ba-a283-e8d91731d70f">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.БрендШтрихкод" category="Ref">
+				<xr:TypeId>e710d9f6-4f25-4e15-b30c-a7983a803380</xr:TypeId>
+				<xr:ValueId>7bd89208-5d64-40b2-a80f-6b1133fb3e9e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.БрендШтрихкод" category="Manager">
+				<xr:TypeId>cf057385-e062-4808-8b13-463a095d11dd</xr:TypeId>
+				<xr:ValueId>58cb5e59-f0a4-400f-9529-bb0bf2ab1f26</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.БрендШтрихкод" category="List">
+				<xr:TypeId>8e8cad60-0293-40b1-9cda-d3ccb083b3b0</xr:TypeId>
+				<xr:ValueId>a76b198b-11a0-4094-a54f-e5881b5abd8a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>БрендШтрихкод</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бренд штрихкод</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="7973d297-23a7-45b5-862a-39059932b83a">
+				<Properties>
+					<Name>AXICORE</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>AXICORE</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ba2759ab-db5a-4874-8299-95adb350f297">
+				<Properties>
+					<Name>VECHIR</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>VECHIR</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eeaf4ba8-2862-4890-ae24-90fd1c1bd391">
+				<Properties>
+					<Name>IMVECHIR</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>IM VECHIR</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>IM VECHIR</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Интернет магазин Вечер</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5623802e-17aa-4fa9-8878-40dac5699807">
+				<Properties>
+					<Name>VechirУпр</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Vechir (упр)</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Vechir (упр)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

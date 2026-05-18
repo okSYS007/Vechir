@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Мобильный склад</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<HorizontalSpacing>None</HorizontalSpacing>
+	<VerticalSpacing>None</VerticalSpacing>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="91">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="92"/>
+			<ChildItems>
+				<Button name="ОбновитьОстаток" id="89">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>4</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.ОбновитьОстаток</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.Синхронизация</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьОстатокРасширеннаяПодсказка" id="90"/>
+				</Button>
+				<InputField name="ОстатокВКассе" id="86">
+					<DataPath>ОстатокВКассе</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Залишок в касі</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОстатокВКассеКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ОстатокВКассеРасширеннаяПодсказка" id="88"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СтрокаПоиска" id="72">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рядок пошуку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рядок пошуку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Height>1</Height>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="73"/>
+			<ChildItems>
+				<InputField name="ПолеСтрокаПоиска" id="67">
+					<DataPath>СтрокаПоиска</DataPath>
+					<SkipOnInput>true</SkipOnInput>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Штрихкод</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ПолеСтрокаПоискаКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ПолеСтрокаПоискаРасширеннаяПодсказка" id="69"/>
+					<Events>
+						<Event name="OnChange">СтрокаПоискаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="НайтиСтрокуПоиска" id="70">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Height>2</Height>
+					<CommandName>Form.Command.НайтиСтрокуПоиска</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.DataSearch</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Знайти</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="НайтиСтрокуПоискаРасширеннаяПодсказка" id="71"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ОбщаяКомандаОчиститьШтрихкоды" id="84">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<Representation>Text</Representation>
+			<CommandName>CommonCommand.ОчиститьШтрихкоды</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Ошибка</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="ОбщаяКомандаОчиститьШтрихкодыРасширеннаяПодсказка" id="85"/>
+		</Button>
+		<Button name="ОбменДанными" id="21">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>CommonCommand.ВыполнитьОбменДанными</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Синхронизация</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Shape>Oval</Shape>
+			<ShapeRepresentation>Always</ShapeRepresentation>
+			<ExtendedTooltip name="ОбменДаннымиРасширеннаяПодсказка" id="22"/>
+		</Button>
+		<Button name="РеализацияСоздать" id="65">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgРеализацияМобильная.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реалізація товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="РеализацияСоздатьРасширеннаяПодсказка" id="66"/>
+		</Button>
+		<Button name="РеализацияСписок" id="29">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgРеализацияМобильная.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Расход</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реалізація товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="РеализацияСписокРасширеннаяПодсказка" id="30"/>
+		</Button>
+		<Button name="ПоступлениеСоздать" id="63">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgПоступлениеМобильное.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надходження товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ПоступлениеСоздатьРасширеннаяПодсказка" id="64"/>
+		</Button>
+		<Button name="ПоступлениеСписок" id="27">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgПоступлениеМобильное.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Приход</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Надходження товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ПоступлениеСписокРасширеннаяПодсказка" id="28"/>
+		</Button>
+		<Button name="ВозвратКлиентаСоздать" id="61">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgВозвратМобильный.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повернення клієнтів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ВозвратКлиентаСоздатьРасширеннаяПодсказка" id="62"/>
+		</Button>
+		<Button name="ВозвратКлиентаСписок" id="45">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgВозвратМобильный.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Переучет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повернення клієнтів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ВозвратКлиентаСписокРасширеннаяПодсказка" id="46"/>
+		</Button>
+		<Button name="ВозвратПоставщикуСоздать" id="59">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgВозвратПоставщикуМобильный.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повернення постачальникам</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ВозвратПоставщикуСоздатьРасширеннаяПодсказка" id="60"/>
+		</Button>
+		<Button name="ВозвратПоставщикуСписок" id="43">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgВозвратПоставщикуМобильный.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Переучет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повернення постачальникам</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ВозвратПоставщикуСписокРасширеннаяПодсказка" id="44"/>
+		</Button>
+		<Button name="ЗаказПоставщикуСоздать" id="57">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgЗаказПоставщикуМобильный.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Замовлення постачальникам</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ЗаказПоставщикуСоздатьРасширеннаяПодсказка" id="58"/>
+		</Button>
+		<Button name="ЗаказПоставщикуСписок" id="41">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgЗаказПоставщикуМобильный.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Переучет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Замовлення постачальникам</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ЗаказПоставщикуСписокРасширеннаяПодсказка" id="42"/>
+		</Button>
+		<Button name="ЗаказКлиентаСоздать" id="55">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgЗаказКлиентаМобильный.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Замовлення клієнта</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ЗаказКлиентаСоздатьРасширеннаяПодсказка" id="56"/>
+		</Button>
+		<Button name="ЗаказКлиентаСписок" id="39">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgЗаказКлиентаМобильный.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Переучет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Замовлення клієнтів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ЗаказКлиентаСписокРасширеннаяПодсказка" id="40"/>
+		</Button>
+		<Button name="СписаниеСоздать" id="53">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgСписаниеМобильное.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списання товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СписаниеСоздатьРасширеннаяПодсказка" id="54"/>
+		</Button>
+		<Button name="СписаниеСписок" id="37">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgСписаниеМобильное.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Переучет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списання товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СписаниеСписокРасширеннаяПодсказка" id="38"/>
+		</Button>
+		<Button name="ПеремещениеСоздать" id="51">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgПеремещениеМобильное.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переміщення товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ПеремещениеСоздатьРасширеннаяПодсказка" id="52"/>
+		</Button>
+		<Button name="ПеремещениеСписок" id="35">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgПеремещениеМобильное.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Переучет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переміщення товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ПеремещениеСписокРасширеннаяПодсказка" id="36"/>
+		</Button>
+		<Button name="ОприходованиеСоздать" id="49">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgОприходованиеМобильное.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оприбуткування товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ОприходованиеСоздатьРасширеннаяПодсказка" id="50"/>
+		</Button>
+		<Button name="ОприходованиеСписок" id="33">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgОприходованиеМобильное.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Переучет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оприбуткування товарів</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ОприходованиеСписокРасширеннаяПодсказка" id="34"/>
+		</Button>
+		<Button name="ИнвентаризацияСоздать" id="47">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgИнвентаризацияМобильная.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Інвентаризація товарів на складі</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ИнвентаризацияСоздатьРасширеннаяПодсказка" id="48"/>
+		</Button>
+		<Button name="УниверсальныйДокументСписок" id="74">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgУниверсальныйДокументМобильный.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Переучет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Універсальні документи</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="УниверсальныйДокументСписокРасширеннаяПодсказка" id="75"/>
+		</Button>
+		<Button name="УниверсальныйДокументСоздать" id="76">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgУниверсальныйДокументМобильный.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Універсальний документ</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="УниверсальныйДокументСоздатьРасширеннаяПодсказка" id="77"/>
+		</Button>
+		<Button name="ТребованияСписок" id="82">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgТребованияНакладнаяМобыльный.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Расход</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вимоги накладна</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ТребованияСписокРасширеннаяПодсказка" id="83"/>
+		</Button>
+		<Button name="ТребованияСоздать" id="80">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgТребованияНакладнаяМобыльный.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вимоги накладна</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ТребованияСоздатьРасширеннаяПодсказка" id="81"/>
+		</Button>
+		<Button name="МаршрутныйЛистСписок" id="95">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgМаршрутныйЛист.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Переучет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="МаршрутныйЛистСписокРасширеннаяПодсказка" id="96"/>
+		</Button>
+		<Button name="МаршрутныйЛистСоздать" id="93">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgМаршрутныйЛист.StandardCommand.Create</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ДокументОбщий</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маршрутний Лист</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="МаршрутныйЛистСоздатьРасширеннаяПодсказка" id="94"/>
+		</Button>
+		<Button name="ИнвентаризацияСписок" id="23">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>Document.vrgИнвентаризацияМобильная.StandardCommand.OpenList</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Переучет</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Інвентаризація товарів на складі</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ИнвентаризацияСписокРасширеннаяПодсказка" id="24"/>
+		</Button>
+		<Button name="Настройки" id="31">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<Height>3</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<CommandName>CommonForm.Настройки.StandardCommand.Open</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.Настройки</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налаштування</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="32"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СтрокаПоиска" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рядок пошуку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОстатокВКассе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток в кассе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НайтиСтрокуПоиска" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Знайти рядок пошуку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Знайти рядок пошуку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиСтрокуПоиска</Action>
+		</Command>
+		<Command name="ОбновитьОстаток" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить остаток</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить остаток</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьОстаток</Action>
+		</Command>
+	</Commands>
+</Form>

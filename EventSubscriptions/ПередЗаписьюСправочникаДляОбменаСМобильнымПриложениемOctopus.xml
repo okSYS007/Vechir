@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<EventSubscription uuid="2c530a17-3768-4300-b1f6-8ed7be646a98">
+		<Properties>
+			<Name>ПередЗаписьюСправочникаДляОбменаСМобильнымПриложениемOctopus</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перед записью справочника для обмена с мобильным приложением Octopus</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зареєструвати зміни довідника для обміну з мобільним додатком торговий представник</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Source>
+				<v8:Type>cfg:CatalogObject.Районы</v8:Type>
+				<v8:Type>cfg:CatalogObject.Организации</v8:Type>
+				<v8:Type>cfg:CatalogObject.НаправленияЗатрат</v8:Type>
+				<v8:Type>cfg:CatalogObject.Области</v8:Type>
+				<v8:Type>cfg:CatalogObject.Номенклатура</v8:Type>
+				<v8:Type>cfg:CatalogObject.ТипыЦенНоменклатуры</v8:Type>
+				<v8:Type>cfg:CatalogObject.Пользователи</v8:Type>
+				<v8:Type>cfg:CatalogObject.МаркетинговаяАкция</v8:Type>
+				<v8:Type>cfg:CatalogObject.Подразделения</v8:Type>
+				<v8:Type>cfg:CatalogObject.Склады</v8:Type>
+				<v8:Type>cfg:CatalogObject.ДоговорыКонтрагентов</v8:Type>
+				<v8:Type>cfg:CatalogObject.СтатьиЗатрат</v8:Type>
+				<v8:Type>cfg:CatalogObject.ЕдиницыИзмерения</v8:Type>
+				<v8:Type>cfg:CatalogObject.Улицы</v8:Type>
+				<v8:Type>cfg:CatalogObject.СерииНоменклатуры</v8:Type>
+				<v8:Type>cfg:CatalogObject.ХарактеристикиНоменклатуры</v8:Type>
+				<v8:Type>cfg:CatalogObject.НаселенныеПункты</v8:Type>
+				<v8:Type>cfg:CatalogObject.Контрагенты</v8:Type>
+			</Source>
+			<Event>BeforeWrite</Event>
+			<Handler>CommonModule.vrgОбменДаннымиСМобильнымиПриложениямиСобытия.ЗарегистрироватьИзмененияСправочникаДляОбменаСМобильнымПриложением</Handler>
+		</Properties>
+	</EventSubscription>
+</MetaDataObject>

@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<DataProcessor uuid="5df3a85e-ce02-4c21-bd9b-5f43a134361e">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КорректировкаДвижений" category="Object">
+				<xr:TypeId>a4ec364c-e2c1-4f11-a7c7-5fa8bc5aab41</xr:TypeId>
+				<xr:ValueId>fc1523c9-d31f-4c8f-bb7d-9111a1197385</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КорректировкаДвижений" category="Manager">
+				<xr:TypeId>db923d31-1f9a-49c4-a9c9-cf05ff22a025</xr:TypeId>
+				<xr:ValueId>9b1b5566-a67d-4d60-bf5f-1332781ba7c0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КорректировкаДвижений</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка движений</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Коригування рухів</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor.КорректировкаДвижений.Form.ОсновнаяФорма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="23f6c00d-bc29-4cab-bd4e-c96bde005131">
+				<Properties>
+					<Name>ДокументОбъект</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ объект</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Документ об'єкт</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentObject.РегистрацияАвансовВНалоговомУчете</v8:Type>
+						<v8:Type>cfg:DocumentObject.УпрПриходныйКассовыйОрдер</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПередачаМалоценкиВЭксплуатацию</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПеремещениеТоваров</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПлатежноеПоручениеВходящее</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВводСведенийОПлановыхНачисленияхУдержаниях</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПоступлениеИзПереработки</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПодготовкаКПередачеОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.ТребованиеНакладная</v8:Type>
+						<v8:Type>cfg:DocumentObject.АктОбОказанииПроизводственныхУслуг</v8:Type>
+						<v8:Type>cfg:DocumentObject.РеализацияТоваровУслуг</v8:Type>
+						<v8:Type>cfg:DocumentObject.УДАЛИТЬРемонтОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВозвратТоваровОтПокупателя</v8:Type>
+						<v8:Type>cfg:DocumentObject.КорректировкаОстатковНКУна01042011</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВозвратТоваровПоставщику</v8:Type>
+						<v8:Type>cfg:DocumentObject.НалоговаяНакладная</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПриходныйКассовыйОрдер</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПерерасчетПропорциональногоНДСпоТоварамИОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.ИзменениеСостоянияОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.УпрОбменВалют</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВводСведенийДляРасчетаСтраховогоСтажа</v8:Type>
+						<v8:Type>cfg:DocumentObject.НачислениеКоммунальногоНалога</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПоступлениеТоваровУслуг</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПлатежноеПоручениеИсходящее</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВводНачальныхОстатковОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПоступлениеНМА</v8:Type>
+						<v8:Type>cfg:DocumentObject.АктСверкиВзаиморасчетов</v8:Type>
+						<v8:Type>cfg:DocumentObject.УпрВнутреннееПеремещениеНаличныхДенежныхСредств</v8:Type>
+						<v8:Type>cfg:DocumentObject.ГТДИмпорт</v8:Type>
+						<v8:Type>cfg:DocumentObject.СписаниеНМА</v8:Type>
+						<v8:Type>cfg:DocumentObject.РасчетКоэффициентовДляЗаполненияПриложенияСВДекларацииПоПрибыли</v8:Type>
+						<v8:Type>cfg:DocumentObject.УпрРасходныйКассовыйОрдер</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПеремещениеМалоценкиВЭксплуатации</v8:Type>
+						<v8:Type>cfg:DocumentObject.РеализацияУслугПоПереработке</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПередачаНМА</v8:Type>
+						<v8:Type>cfg:DocumentObject.ЗакрытиеМесяца</v8:Type>
+						<v8:Type>cfg:DocumentObject.ОприходованиеТоваров</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПереоценкаТоваровВРознице</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВводНачальныхОстатковПоЗарплате</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПередачаОборудованияВМонтаж</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВводВЭксплуатациюОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.ОтчетКомитентуОПродажах</v8:Type>
+						<v8:Type>cfg:DocumentObject.ИзменениеНалоговогоНазначенияЗапасов</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВнутреннийЗаказ</v8:Type>
+						<v8:Type>cfg:DocumentObject.ABCКлассификацияПокупателей</v8:Type>
+						<v8:Type>cfg:DocumentObject.ИзменениеНалоговогоНазначенияОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПеремещениеОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.НачислениеЗарплатыРаботникамОрганизаций</v8:Type>
+						<v8:Type>cfg:DocumentObject.СписаниеДепонентовВДоходыОрганизаций</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВнутреннееПеремещениеНаличныхДенежныхСредств</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВозвратНаРаботуОрганизаций</v8:Type>
+						<v8:Type>cfg:DocumentObject.Приложение2КНалоговойНакладной</v8:Type>
+						<v8:Type>cfg:DocumentObject.КомплектацияНоменклатуры</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПлатежныйОрдерСписаниеДенежныхСредств</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПередачаТоваров</v8:Type>
+						<v8:Type>cfg:DocumentObject.АттестацияРабочихМестДляУчетаСпецстажа</v8:Type>
+						<v8:Type>cfg:DocumentObject.НормированиеРасходовПоНалогуНаПрибыль</v8:Type>
+						<v8:Type>cfg:DocumentObject.РасчетыПоНалогуНаПрибыль</v8:Type>
+						<v8:Type>cfg:DocumentObject.ОтчетОРозничныхПродажах</v8:Type>
+						<v8:Type>cfg:DocumentObject.МодернизацияНМА</v8:Type>
+						<v8:Type>cfg:DocumentObject.ИзменениеНалоговогоНазначенияТЗР</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПокупкаПродажаВалюты</v8:Type>
+						<v8:Type>cfg:DocumentObject.АвансовыйОтчет</v8:Type>
+						<v8:Type>cfg:DocumentObject.ОтчетКомиссионераОПродажах</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВводНачальныхОстатковМалоценкиВЭксплуатации</v8:Type>
+						<v8:Type>cfg:DocumentObject.СписаниеОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПередачаОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВводСведенийОбИндексированномДоходе</v8:Type>
+						<v8:Type>cfg:DocumentObject.ОпределениеФинансовыхРезультатов</v8:Type>
+						<v8:Type>cfg:DocumentObject.СписаниеТоваров</v8:Type>
+						<v8:Type>cfg:DocumentObject.РасходныйКассовыйОрдер</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПринятиеКУчетуНМА</v8:Type>
+						<v8:Type>cfg:DocumentObject.КорректировкаДолга</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПлатежныйОрдерПоступлениеДенежныхСредств</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПереоценкаОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.СписаниеМалоценкиИзЭксплуатации</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВозвратПоТребованииНакладной</v8:Type>
+						<v8:Type>cfg:DocumentObject.ОтчетПроизводстваЗаСмену</v8:Type>
+						<v8:Type>cfg:DocumentObject.ПоступлениеДопРасходов</v8:Type>
+						<v8:Type>cfg:DocumentObject.МодернизацияОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.КорректировкаОжидаемогоИПодтвержденногоНДС</v8:Type>
+						<v8:Type>cfg:DocumentObject.ВводСведенийОБанковскихКарточкахРаботников</v8:Type>
+						<v8:Type>cfg:DocumentObject.ИндексацияОС</v8:Type>
+						<v8:Type>cfg:DocumentObject.РегистрацияСтоимостиПриобретенияОСПропорциональноОблагаемыхНДС</v8:Type>
+						<v8:Type>cfg:DocumentObject.ЗарплатаКВыплатеОрганизаций</v8:Type>
+						<v8:Type>cfg:DocumentObject.РегистрацияВходящегоНалоговогоДокумента</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="84b0ffe7-2f7b-4d85-b3f9-f367ba934895">
+				<Properties>
+					<Name>РучнаяКорректировка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ручная корректировка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Ручне коригування</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="b15c5ad0-e536-49c9-b309-82520fa6289c">
+				<InternalInfo>
+					<xr:GeneratedType name="DataProcessorTabularSection.КорректировкаДвижений.Регистры" category="TabularSection">
+						<xr:TypeId>f8cb8079-463d-4943-9751-2d7219991ccd</xr:TypeId>
+						<xr:ValueId>3ddb6a49-efd3-4a0f-b23d-ca16dcc88446</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.КорректировкаДвижений.Регистры" category="TabularSectionRow">
+						<xr:TypeId>d7721621-e0b9-47b1-bcb1-fd9a455bf612</xr:TypeId>
+						<xr:ValueId>f8e48b59-9cd3-4817-9bfe-6796bf1210b7</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Регистры</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистры</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Регістри</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<StandardAttributes>
+						<xr:StandardAttribute name="LineNumber">
+							<xr:LinkByType/>
+							<xr:FillChecking>DontCheck</xr:FillChecking>
+							<xr:MultiLine>false</xr:MultiLine>
+							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+							<xr:CreateOnInput>Auto</xr:CreateOnInput>
+							<xr:MaxValue xsi:nil="true"/>
+							<xr:ToolTip/>
+							<xr:ExtendedEdit>false</xr:ExtendedEdit>
+							<xr:Format/>
+							<xr:ChoiceForm/>
+							<xr:QuickChoice>Auto</xr:QuickChoice>
+							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+							<xr:EditFormat/>
+							<xr:PasswordMode>false</xr:PasswordMode>
+							<xr:DataHistory>Use</xr:DataHistory>
+							<xr:MarkNegatives>false</xr:MarkNegatives>
+							<xr:MinValue xsi:nil="true"/>
+							<xr:Synonym/>
+							<xr:Comment/>
+							<xr:FullTextSearch>Use</xr:FullTextSearch>
+							<xr:ChoiceParameterLinks/>
+							<xr:FillValue xsi:nil="true"/>
+							<xr:Mask/>
+							<xr:ChoiceParameters/>
+						</xr:StandardAttribute>
+					</StandardAttributes>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="550f1bbd-a0ba-482c-bf55-02d3abd08c3d">
+						<Properties>
+							<Name>ТипРегистра</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип регистра</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Тип регістра</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>20</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="2bd2f72f-8f11-4e7a-9bbd-9c99e5c048d1">
+						<Properties>
+							<Name>Имя</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Ім'я</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>100</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="6121d34c-918d-4f96-a0d8-e13c6217cd8c">
+						<Properties>
+							<Name>Синоним</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Синоним</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Синонім</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>100</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="8730f1a7-7b2a-4e4a-b915-4d3182b9394e">
+						<Properties>
+							<Name>Подсистемы</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подсистемы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Підсистеми</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>0</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="08be32d8-699e-4acc-8543-5fdd1a48f8bf">
+						<Properties>
+							<Name>ЕстьДвижения</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Есть движения</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Є рухи</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="eb018a39-6b5c-4afa-8e5e-f6ddc9749d8b">
+						<Properties>
+							<Name>Отображение</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отображение</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відображення</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="babb9ab6-8624-4fd8-b05a-641969567f36">
+						<Properties>
+							<Name>Прочитан</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прочитан</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Прочитаний</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="3d752899-d642-4f5d-a1cb-300aa8cd5e78">
+						<Properties>
+							<Name>Отрисован</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отрисован</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>Відмальований</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<Form>ОсновнаяФорма</Form>
+			<Form>ФормаНастройки</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

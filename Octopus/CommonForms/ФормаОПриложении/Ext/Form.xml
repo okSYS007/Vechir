@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Про додаток</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Група шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Група шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияVRGROUP" id="20">
+					<Width>6</Width>
+					<Height>3</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорація VR GROUP</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>AutoSize</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.VRGROUP</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияVRGROUPКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДекорацияVRGROUPРасширеннаяПодсказка" id="22"/>
+				</PictureDecoration>
+				<LabelDecoration name="ДекорацияШапка" id="15">
+					<Height>4</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Font height="8" kind="AutoFont"/>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;fontsize 6&gt;&lt;b&gt;OCTOPUS. МОБИЛЬНЫЙ СКЛАД&lt;/&gt;&lt;/&gt;
+&lt;fontsize 6&gt;ГОТОВОЕ РЕШЕНИЕ ДЛЯ ПРОДУКТОВ 1С &lt;/&gt;&lt;fontsize 6&gt;ОТ КОМПАНИИ VR GROUP&lt;/&gt;</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="ДекорацияШапкаКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ДекорацияШапкаРасширеннаяПодсказка" id="17"/>
+				</LabelDecoration>
+				<PictureDecoration name="ДекорацияOCTOPUS" id="23">
+					<Width>6</Width>
+					<Height>3</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорація OCTOPUS</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>AutoSize</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.OCTOPUS</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияOCTOPUSКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДекорацияOCTOPUSРасширеннаяПодсказка" id="25"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelField name="ЭлектронныйАдресТехническойПоддержки" id="1">
+			<DataPath>ЭлектронныйАдресТехническойПоддержки</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тех. підтримка</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Top</TitleLocation>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ЭлектронныйАдресТехническойПоддержкиКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ЭлектронныйАдресТехническойПоддержкиРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="Click">ЭлектронныйАдресТехническойПоддержкиНажатие</Event>
+			</Events>
+		</LabelField>
+		<LabelField name="TelegramHelpDesk" id="7">
+			<DataPath>TelegramHelpDesk</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="TelegramHelpDeskКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="TelegramHelpDeskРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="Click">TelegramHelpDeskНажатие</Event>
+			</Events>
+		</LabelField>
+		<LabelField name="СайтПриложения" id="4">
+			<DataPath>СайтПриложения</DataPath>
+			<TitleLocation>Top</TitleLocation>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="СайтПриложенияКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СайтПриложенияРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="Click">СайтПриложенияНажатие</Event>
+			</Events>
+		</LabelField>
+		<Button name="КомандаТелеграм" id="10">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.КомандаТелеграм</CommandName>
+			<ExtendedTooltip name="КомандаТелеграмРасширеннаяПодсказка" id="11"/>
+		</Button>
+		<LabelDecoration name="ДекорацияОтступ" id="29">
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="31"/>
+		</LabelDecoration>
+		<LabelDecoration name="ДекорацияПодвал" id="12">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;fontsize 6&gt;OCTOPUS. МОБИЛЬНЫЙ СКЛАД V1.0&lt;/&gt;
+&lt;fontsize 6&gt;@КОМПАНИЯ VR GROUP 2021&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Bottom</VerticalAlign>
+			<ContextMenu name="ДекорацияПодвалКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="ДекорацияПодвалРасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
+		<LabelDecoration name="СсылкаНаСайт" id="26">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>vrgroup.info</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<Hyperlink>true</Hyperlink>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Bottom</VerticalAlign>
+			<ContextMenu name="СсылкаНаСайтКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="СсылкаНаСайтРасширеннаяПодсказка" id="28"/>
+			<Events>
+				<Event name="Click">СсылкаНаСайтНажатие</Event>
+			</Events>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЭлектронныйАдресТехническойПоддержки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Електронна адреса технічної підтримки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СайтПриложения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сайт додатка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="TelegramHelpDesk" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Telegram help desk</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаТелеграм" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда телеграм</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда телеграм</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаТелеграм</Action>
+		</Command>
+	</Commands>
+</Form>

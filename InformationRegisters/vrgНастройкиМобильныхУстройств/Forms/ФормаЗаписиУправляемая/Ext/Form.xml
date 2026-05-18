@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="УзелУстройства" id="52">
+			<DataPath>Объект.УзелУстройства</DataPath>
+			<ContextMenu name="УзелУстройстваКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="УзелУстройстваРасширеннаяПодсказка" id="54"/>
+		</InputField>
+		<InputField name="ИдентификаторУстройства" id="58">
+			<DataPath>Объект.ИдентификаторУстройства</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ИдентификаторУстройстваКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="ИдентификаторУстройстваРасширеннаяПодсказка" id="60"/>
+		</InputField>
+		<CheckBoxField name="ЗапретДоступа" id="46">
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапретДоступаКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ЗапретДоступаРасширеннаяПодсказка" id="48"/>
+		</CheckBoxField>
+		<InputField name="Организация" id="7">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Пользователь" id="43">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<UsualGroup name="ГруппаПароль" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пароль</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пароль</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<InputField name="ПарольДляВходаНаУстройстве" id="55">
+					<Width>11</Width>
+					<PasswordMode>true</PasswordMode>
+					<ContextMenu name="ПарольДляВходаНаУстройствеКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ПарольДляВходаНаУстройствеРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<PictureDecoration name="ДекорацияПоказатьПароль" id="63">
+					<Visible>false</Visible>
+					<Width>2</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация показать пароль</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<PictureSize>AutoSize</PictureSize>
+					<Picture>
+						<xr:Ref>StdPicture.DialogQuestion</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияПоказатьПарольКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ДекорацияПоказатьПарольРасширеннаяПодсказка" id="65"/>
+					<Events>
+						<Event name="Click">ДекорацияПоказатьПарольНажатие</Event>
+					</Events>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПрава" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа права</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа права</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПраваРасширеннаяПодсказка" id="67"/>
+		</UsualGroup>
+		<InputField name="КоличествоДнейХраненияДокументовНаУстройстве" id="10">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КоличествоДнейХраненияДокументовНаУстройствеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КоличествоДнейХраненияДокументовНаУстройствеРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="КоличествоДнейДоступностиРедактированияДокументов" id="16">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КоличествоДнейДоступностиРедактированияДокументовКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КоличествоДнейДоступностиРедактированияДокументовРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ИнтервалАвтосохранения" id="28">
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИнтервалАвтосохраненияКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ИнтервалАвтосохраненияРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<CheckBoxField name="ВыгружатьКартинки" id="13">
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыгружатьКартинкиКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ВыгружатьКартинкиРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<CheckBoxField name="ИспользоватьАвтосохранение" id="25">
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользоватьАвтосохранениеКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ИспользоватьАвтосохранениеРасширеннаяПодсказка" id="27"/>
+		</CheckBoxField>
+		<InputField name="ТипЦен" id="19">
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТипЦенКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ТипЦенРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Конфигурация" id="22">
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КонфигурацияКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<CheckBoxField name="РазрешитьРедактированиеДатыДокументов" id="40">
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РазрешитьРедактированиеДатыДокументовКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="РазрешитьРедактированиеДатыДокументовРасширеннаяПодсказка" id="42"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЗапрашиватьКоличествоПриСканировании" id="31">
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапрашиватьКоличествоПриСканированииКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ЗапрашиватьКоличествоПриСканированииРасширеннаяПодсказка" id="33"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.vrgНастройкиМобильныхУстройств</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

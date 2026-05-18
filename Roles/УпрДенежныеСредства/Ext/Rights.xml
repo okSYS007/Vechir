@@ -1,0 +1,1119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.9">
+	<setForNewObjects>false</setForNewObjects>
+	<setForAttributesByDefault>true</setForAttributesByDefault>
+	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<object>
+		<name>Document.ВедомостьКВыплате.Attribute.Ответственный</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.TabularSection.Сотрудники</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Configuration.УправлениеТорговымПредприятиемДляУкраины</name>
+		<right>
+			<name>ThinClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>WebClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MobileClient</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SaveUserData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Output</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.УпрОбменВалют</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрОбменВалют ИЗ Документ.УпрОбменВалют КАК УпрОбменВалют
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступаКассы.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса) КАК ВложенныйЗапрос
+    ПО (УпрОбменВалют.Касса = ВложенныйЗапрос.Касса
+            ИЛИ ВложенныйЗапрос.ЧтениеВсехКасс
+            или ВложенныйЗапрос.РедактированиеВсехКасс  )</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрОбменВалют ИЗ Документ.УпрОбменВалют КАК УпрОбменВалют
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступаКассы.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса) КАК ВложенныйЗапрос
+    ПО (УпрОбменВалют.Касса = ВложенныйЗапрос.Касса
+                        или ВложенныйЗапрос.РедактированиеВсехКасс  )</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрОбменВалют ИЗ Документ.УпрОбменВалют КАК УпрОбменВалют
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступаКассы.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса) КАК ВложенныйЗапрос
+    ПО (УпрОбменВалют.Касса = ВложенныйЗапрос.Касса
+                        или ВложенныйЗапрос.РедактированиеВсехКасс  )</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.УпрВнутреннееПеремещениеНаличныхДенежныхСредств</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрВнутреннееПеремещениеНаличныхДенежныхСредств ИЗ Документ.УпрВнутреннееПеремещениеНаличныхДенежныхСредств КАК УпрВнутреннееПеремещениеНаличныхДенежныхСредств
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+		МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+		МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+		УпрГруппыПравДоступаКассы.Касса КАК Касса
+	ИЗ
+		Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+			ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступаКассы.Ссылка
+	ГДЕ
+		ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+	
+	СГРУППИРОВАТЬ ПО
+		УпрГруппыПравДоступаКассы.Касса) КАК ВложенныйЗапрос
+	ПО (УпрВнутреннееПеремещениеНаличныхДенежныхСредств.Касса = ВложенныйЗапрос.Касса
+			ИЛИ ВложенныйЗапрос.ЧтениеВсехКасс
+			или ВложенныйЗапрос.РедактированиеВсехКасс  )</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрВнутреннееПеремещениеНаличныхДенежныхСредств ИЗ Документ.УпрВнутреннееПеремещениеНаличныхДенежныхСредств КАК УпрВнутреннееПеремещениеНаличныхДенежныхСредств
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступаКассы.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса) КАК ВложенныйЗапрос
+    ПО (УпрВнутреннееПеремещениеНаличныхДенежныхСредств.Касса = ВложенныйЗапрос.Касса
+            ИЛИ ВложенныйЗапрос.РедактированиеВсехКасс)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрВнутреннееПеремещениеНаличныхДенежныхСредств ИЗ Документ.УпрВнутреннееПеремещениеНаличныхДенежныхСредств КАК УпрВнутреннееПеремещениеНаличныхДенежныхСредств
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступаКассы.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса) КАК ВложенныйЗапрос
+    ПО (УпрВнутреннееПеремещениеНаличныхДенежныхСредств.Касса = ВложенныйЗапрос.Касса
+            ИЛИ ВложенныйЗапрос.РедактированиеВсехКасс)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfAccounts.Хозрасчетный</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.TabularSection.Сотрудники.Attribute.КВыплате</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СвязанныеУпрКО</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.УпрДенежныеСредства</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрДенежныеСредства ИЗ РегистрНакопления.УпрДенежныеСредства КАК УпрДенежныеСредства
+
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступа.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступа.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса,
+        УпрГруппыПравДоступаКассы.Чтение КАК Чтение,
+        УпрГруппыПравДоступаКассы.Редактирование КАК Редактирование
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа КАК УпрГруппыПравДоступа
+                ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+                ПО УпрГруппыПравДоступа.Ссылка = УпрГруппыПравДоступаКассы.Ссылка
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступа.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса,
+        УпрГруппыПравДоступаКассы.Чтение,
+        УпрГруппыПравДоступаКассы.Редактирование) КАК ВложенныйЗапрос
+    ПО (УпрДенежныеСредства.БанковскийСчетКасса = ВложенныйЗапрос.Касса
+                И ВложенныйЗапрос.Чтение
+            ИЛИ ВложенныйЗапрос.ЧтениеВсехКасс)
+</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.Attribute.ПериодРегистрации</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.УпрДенежныеСредства</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.КурсыВалют</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.TabularSection.Сотрудники.Attribute.Должность</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.StandardAttribute.Posted</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.StandardAttribute.Ref</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.StandardAttribute.Date</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.StandardAttribute.Number</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.Attribute.Подразделение</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.Attribute.ДокументОснование</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.TabularSection.Сотрудники.Attribute.Подразделение</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.УпрВедомостьДенежныеСредства</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.УпрРасходныйКассовыйОрдер</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрРасходныйКассовыйОрдер ИЗ Документ.УпрРасходныйКассовыйОрдер КАК УпрРасходныйКассовыйОрдер
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступаКассы.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса) КАК ВложенныйЗапрос
+    ПО (УпрРасходныйКассовыйОрдер.Касса = ВложенныйЗапрос.Касса
+            ИЛИ ВложенныйЗапрос.ЧтениеВсехКасс
+            или ВложенныйЗапрос.РедактированиеВсехКасс  )</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрРасходныйКассовыйОрдер ИЗ Документ.УпрРасходныйКассовыйОрдер КАК УпрРасходныйКассовыйОрдер
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступаКассы.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса) КАК ВложенныйЗапрос
+    ПО (УпрРасходныйКассовыйОрдер.Касса = ВложенныйЗапрос.Касса
+                        или ВложенныйЗапрос.РедактированиеВсехКасс  )</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрРасходныйКассовыйОрдер ИЗ Документ.УпрРасходныйКассовыйОрдер КАК УпрРасходныйКассовыйОрдер
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступаКассы.Ссылка.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступаКассы.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса) КАК ВложенныйЗапрос
+    ПО (УпрРасходныйКассовыйОрдер.Касса = ВложенныйЗапрос.Касса
+                        или ВложенныйЗапрос.РедактированиеВсехКасс  )</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.УпрПриходныйКассовыйОрдер</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрПриходныйКассовыйОрдер ИЗ Документ.УпрПриходныйКассовыйОрдер КАК УпрПриходныйКассовыйОрдер
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступа.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступа.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса,
+        УпрГруппыПравДоступаКассы.Чтение КАК Чтение,
+        УпрГруппыПравДоступаКассы.Редактирование КАК Редактирование
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа КАК УпрГруппыПравДоступа
+                ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+                ПО УпрГруппыПравДоступа.Ссылка = УпрГруппыПравДоступаКассы.Ссылка
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступа.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса,
+        УпрГруппыПравДоступаКассы.Чтение,
+        УпрГруппыПравДоступаКассы.Редактирование) КАК ВложенныйЗапрос
+    ПО (УпрПриходныйКассовыйОрдер.Касса = ВложенныйЗапрос.Касса
+                И ВложенныйЗапрос.Чтение
+            ИЛИ ВложенныйЗапрос.ЧтениеВсехКасс)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрПриходныйКассовыйОрдер ИЗ Документ.УпрПриходныйКассовыйОрдер КАК УпрПриходныйКассовыйОрдер
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступа.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступа.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса,
+        УпрГруппыПравДоступаКассы.Чтение КАК Чтение,
+        УпрГруппыПравДоступаКассы.Редактирование КАК Редактирование
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа КАК УпрГруппыПравДоступа
+                ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+                ПО УпрГруппыПравДоступа.Ссылка = УпрГруппыПравДоступаКассы.Ссылка
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступа.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса,
+        УпрГруппыПравДоступаКассы.Чтение,
+        УпрГруппыПравДоступаКассы.Редактирование) КАК ВложенныйЗапрос
+    ПО (УпрПриходныйКассовыйОрдер.Касса = ВложенныйЗапрос.Касса
+                И ВложенныйЗапрос.Редактирование
+            ИЛИ ВложенныйЗапрос.РедактированиеВсехКасс)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрПриходныйКассовыйОрдер ИЗ Документ.УпрПриходныйКассовыйОрдер КАК УпрПриходныйКассовыйОрдер
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+		МАКСИМУМ(УпрГруппыПравДоступа.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+		МАКСИМУМ(УпрГруппыПравДоступа.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+		УпрГруппыПравДоступаКассы.Касса КАК Касса,
+		УпрГруппыПравДоступаКассы.Чтение КАК Чтение,
+		УпрГруппыПравДоступаКассы.Редактирование КАК Редактирование
+	ИЗ
+		Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа КАК УпрГруппыПравДоступа
+				ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+				ПО УпрГруппыПравДоступа.Ссылка = УпрГруппыПравДоступаКассы.Ссылка
+			ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступа.Ссылка
+	ГДЕ
+		ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+	
+	СГРУППИРОВАТЬ ПО
+		УпрГруппыПравДоступаКассы.Касса,
+		УпрГруппыПравДоступаКассы.Чтение,
+		УпрГруппыПравДоступаКассы.Редактирование) КАК ВложенныйЗапрос
+	ПО (УпрПриходныйКассовыйОрдер.Касса = ВложенныйЗапрос.Касса
+				И ВложенныйЗапрос.Редактирование
+			ИЛИ ВложенныйЗапрос.РедактированиеВсехКасс)</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.Attribute.Организация</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.УпрДвиженияДенежныхСредств</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>УпрДвиженияДенежныхСредств ИЗ РегистрНакопления.УпрДвиженияДенежныхСредств КАК УпрДвиженияДенежныхСредств
+
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+        МАКСИМУМ(УпрГруппыПравДоступа.ЧтениеВсехКасс) КАК ЧтениеВсехКасс,
+        МАКСИМУМ(УпрГруппыПравДоступа.РедактированиеВсехКасс) КАК РедактированиеВсехКасс,
+        УпрГруппыПравДоступаКассы.Касса КАК Касса,
+        УпрГруппыПравДоступаКассы.Чтение КАК Чтение,
+        УпрГруппыПравДоступаКассы.Редактирование КАК Редактирование
+    ИЗ
+        Справочник.Пользователи.ГруппыПрав КАК ПользователиГруппыПрав
+            ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа КАК УпрГруппыПравДоступа
+                ЛЕВОЕ СОЕДИНЕНИЕ Справочник.УпрГруппыПравДоступа.Кассы КАК УпрГруппыПравДоступаКассы
+                ПО УпрГруппыПравДоступа.Ссылка = УпрГруппыПравДоступаКассы.Ссылка
+            ПО ПользователиГруппыПрав.Группа = УпрГруппыПравДоступа.Ссылка
+    ГДЕ
+        ПользователиГруппыПрав.Ссылка = &amp;ТекущийПользователь
+    
+    СГРУППИРОВАТЬ ПО
+        УпрГруппыПравДоступаКассы.Касса,
+        УпрГруппыПравДоступаКассы.Чтение,
+        УпрГруппыПравДоступаКассы.Редактирование) КАК ВложенныйЗапрос
+    ПО (УпрДвиженияДенежныхСредств.БанковскийСчетКасса = ВложенныйЗапрос.Касса
+                И ВложенныйЗапрос.Чтение
+            ИЛИ ВложенныйЗапрос.ЧтениеВсехКасс)
+</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>TotalsControl</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.Attribute.Комментарий</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВедомостьКВыплате.TabularSection.Сотрудники.Attribute.Сотрудник</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+</Rights>

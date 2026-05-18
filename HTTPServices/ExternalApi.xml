@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<HTTPService uuid="5b263ad3-5352-4db2-82f8-ac45a358507b">
+		<Properties>
+			<Name>ExternalApi</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>External api</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<RootURL>api</RootURL>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="59c063b0-a23b-4d22-960b-10c38e37a7b4">
+				<Properties>
+					<Name>ДанныеСотрудника</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные сотрудника</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/employee-inventory</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="10e9caaf-713c-49bc-af4b-41be14cfa812">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ДанныеСотрудникаGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="8a83caa1-e7e5-4760-a6fd-d6dee75bcd97">
+				<Properties>
+					<Name>ИзменитьТипОплатыЗаказа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменить тип оплаты заказа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/order-payment</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="a113e796-a68e-43cb-a425-46ed71dc49ca">
+						<Properties>
+							<Name>PATCH</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>PATCH</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>PATCH</HTTPMethod>
+							<Handler>ИзменитьТипОплатыЗаказаPATCH</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="59d7aa87-2c5d-432c-99de-7a533c5c091f">
+				<Properties>
+					<Name>ИзменитьСтатусЗаказа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменить статус заказа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/order-status</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="177fa1e4-1ef5-40d9-bd50-33a70cf091b6">
+						<Properties>
+							<Name>PATCH</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>PATCH</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>PATCH</HTTPMethod>
+							<Handler>ИзменитьСтатусЗаказаPATCH</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="85f25143-0a2f-4e96-9a6d-28657b1abce5">
+				<Properties>
+					<Name>ИзменитьДеталиЗаказа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменить детали заказа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/order-details</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="5e7e3fc4-c7a0-4984-b762-a481686bc2d5">
+						<Properties>
+							<Name>PATCH</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>PATCH</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>PATCH</HTTPMethod>
+							<Handler>ИзменитьДеталиЗаказаPATCH</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="30966eef-1e2e-4fe4-a9cc-2c1882cf7641">
+				<Properties>
+					<Name>СписокСотрудников</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список сотрудников</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/employees</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="6ef3003b-1ffa-41e2-8536-979484b182f2">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>СписокСотрудниковGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="b0636ddb-d22d-4489-9035-71f5881954c3">
+				<Properties>
+					<Name>СписокСкладов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список складов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/warehouses</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="2ea3b155-9ed9-493b-88f2-e75b763a89b9">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>СписокСкладовGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="7e1e217c-465a-4cb0-ae7a-4161cd9a4a1b">
+				<Properties>
+					<Name>image</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Image</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/image/{imageName}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="7526aed2-cc5f-410d-8ed8-a0bab1f2c8b4">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>imageGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="adaef3cf-189e-4403-8ad5-fbe0da4d115b">
+				<Properties>
+					<Name>rest_kkm</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Rest kkm</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/rest_kkm/{user_uuid}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="7203556d-11d5-41a0-89df-26d93a388ed8">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>rest_kkmGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="65a13538-a882-408c-b44d-7e38f93041cf">
+				<Properties>
+					<Name>rests</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Rests</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/rests</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="2aa52d14-ad77-41b2-b520-92bb0bbd7447">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>restsGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="42153e4d-fdb6-4075-a50e-07570233842a">
+				<Properties>
+					<Name>version</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Version</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/app-version/{node_code}/{version}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="e63f6849-0a86-4826-961f-361489273dad">
+						<Properties>
+							<Name>get</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Get</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>versionget</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="607832f5-dd0f-4b6f-be9e-25c4d94fb77c">
+				<Properties>
+					<Name>set_ttn</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Set ttn</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/set_ttn</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="7602b12e-a965-43ef-ad6c-0e117004ab81">
+						<Properties>
+							<Name>PUT</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>PUT</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>PUT</HTTPMethod>
+							<Handler>set_ttnPUT</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="5828d692-8cb8-4efe-bc93-ae988e714b94">
+				<Properties>
+					<Name>ОстаткиТоваров</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остатки товаров</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Залишки товарів</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/getStock</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="31c934bd-96d2-4ce0-be48-055ba9ca1984">
+						<Properties>
+							<Name>GET</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>uk</v8:lang>
+									<v8:content>GET</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ОстаткиТоваровGET</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="af759d54-a6eb-4c1f-9aad-20bbf3e0696e">
+				<Properties>
+					<Name>ПроверитьНоменклатуру</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверить номенклатуру</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/CheckProduct</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="d7cb9b6f-658b-4038-a41c-58793862c316">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>ПроверитьНоменклатуруPOST</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="7e4b39cf-8f3d-44be-a5bd-5b688622764e">
+				<Properties>
+					<Name>СоздатьЗаказ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создать заказ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/add_order</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="a5a8ba3c-1187-4f60-856d-23341de9b826">
+						<Properties>
+							<Name>POST</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>POST</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>СоздатьЗаказadd_order</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="93c3c8dd-a190-4be5-b2df-455ae5ec0915">
+				<Properties>
+					<Name>GetClientVerion</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get client verion</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/client-version/{node_code}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="b3898a19-23f0-4521-84a7-d2f5585522ed">
+						<Properties>
+							<Name>Get</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Get</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>GetClientVerionGet</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>

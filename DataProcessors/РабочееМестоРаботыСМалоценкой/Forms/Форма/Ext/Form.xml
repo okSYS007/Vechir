@@ -1,0 +1,2220 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Работа с малоценкой</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>uk</v8:lang>
+			<v8:content>Робота з малоцінкою</v8:content>
+		</v8:item>
+	</Title>
+	<Width>140</Width>
+	<Height>80</Height>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Приходные" id="303">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<Check>true</Check>
+				<CommandName>Form.Command.Приходные</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Приходные</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Прибуткові</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ПриходныеРасширеннаяПодсказка" id="304"/>
+			</Button>
+			<Button name="Поступления" id="301">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<Check>true</Check>
+				<CommandName>Form.Command.Поступления</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Поступления</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>uk</v8:lang>
+						<v8:content>Надходження</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ПоступленияРасширеннаяПодсказка" id="302"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="грГориз" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр гориз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гр гориз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="грГоризРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<UsualGroup name="грГоризонтальнаяДанныеИСтруктура" id="564">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр горизонтальная данные и структура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гр горизонтальная данные и структура</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="грГоризонтальнаяДанныеИСтруктураРасширеннаяПодсказка" id="565"/>
+					<ChildItems>
+						<UsualGroup name="грГоризонтДанныеПрихода" id="562">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр горизонт данные прихода</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр горизонт данные прихода</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="грГоризонтДанныеПриходаРасширеннаяПодсказка" id="563"/>
+							<ChildItems>
+								<UsualGroup name="грДокументыПрихода" id="17">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документы прихода</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Документи приходу</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр документы прихода</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Collapsible</Behavior>
+									<ExtendedTooltip name="грДокументыПриходаРасширеннаяПодсказка" id="18"/>
+									<ChildItems>
+										<Table name="ДокументыПрихода" id="243">
+											<EnableStartDrag>true</EnableStartDrag>
+											<DataPath>ДокументыПрихода</DataPath>
+											<RowPictureDataPath>ДокументыПрихода.DefaultPicture</RowPictureDataPath>
+											<CommandSet>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Create</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>Post</ExcludedCommand>
+												<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>UndoPosting</ExcludedCommand>
+											</CommandSet>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<ContextMenu name="ДокументыПриходаКонтекстноеМеню" id="244"/>
+											<AutoCommandBar name="ДокументыПриходаКоманднаяПанель" id="245">
+												<ChildItems>
+													<Button name="ДокументыПриходаСоздатьЦепочкуДокументовПриход" id="305">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.СоздатьЦепочкуДокументовПриход</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Создать цепочку документов приход</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Створити ланцюжок документів прихід</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ДокументыПриходаСоздатьЦепочкуДокументовПриходРасширеннаяПодсказка" id="306"/>
+													</Button>
+													<Button name="ДокументыПриходаСоздатьЦепочкуДокументовПередачаОС" id="573">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.СоздатьЦепочкуДокументовПередачаМалоценки</CommandName>
+														<ExtendedTooltip name="ДокументыПриходаСоздатьЦепочкуДокументовПередачаОСРасширеннаяПодсказка" id="574"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ДокументыПриходаРасширеннаяПодсказка" id="246"/>
+											<SearchStringAddition name="ДокументыПриходаСтрокаПоиска" id="247">
+												<AdditionSource>
+													<Item>ДокументыПрихода</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДокументыПриходаСтрокаПоискаКонтекстноеМеню" id="248"/>
+												<ExtendedTooltip name="ДокументыПриходаСтрокаПоискаРасширеннаяПодсказка" id="249"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ДокументыПриходаСостояниеПросмотра" id="250">
+												<AdditionSource>
+													<Item>ДокументыПрихода</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДокументыПриходаСостояниеПросмотраКонтекстноеМеню" id="251"/>
+												<ExtendedTooltip name="ДокументыПриходаСостояниеПросмотраРасширеннаяПодсказка" id="252"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ДокументыПриходаУправлениеПоиском" id="253">
+												<AdditionSource>
+													<Item>ДокументыПрихода</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ДокументыПриходаУправлениеПоискомКонтекстноеМеню" id="254"/>
+												<ExtendedTooltip name="ДокументыПриходаУправлениеПоискомРасширеннаяПодсказка" id="255"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateRow">ДокументыПриходаПриАктивизацииСтроки</Event>
+											</Events>
+											<ChildItems>
+												<LabelField name="ДокументыПриходаСсылка" id="292">
+													<DataPath>ДокументыПрихода.ДокументыПриходаСсылка</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ссылка</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Посилання</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДокументыПриходаСсылкаКонтекстноеМеню" id="293"/>
+													<ExtendedTooltip name="ДокументыПриходаСсылкаРасширеннаяПодсказка" id="294"/>
+												</LabelField>
+												<LabelField name="ДокументыПриходаДата" id="256">
+													<DataPath>~ДокументыПрихода.Date</DataPath>
+													<ContextMenu name="ДокументыПриходаДатаКонтекстноеМеню" id="257"/>
+													<ExtendedTooltip name="ДокументыПриходаДатаРасширеннаяПодсказка" id="258"/>
+												</LabelField>
+												<LabelField name="ДокументыПриходаНомер" id="259">
+													<DataPath>ДокументыПрихода.ДокументОснованиеNumber</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Номер</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Номер</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДокументыПриходаНомерКонтекстноеМеню" id="260"/>
+													<ExtendedTooltip name="ДокументыПриходаНомерРасширеннаяПодсказка" id="261"/>
+												</LabelField>
+												<LabelField name="ДокументыПриходаВидОперации" id="262">
+													<DataPath>ДокументыПрихода.ДокументОснованиеВидОперации</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вид операции</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Вид операції</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДокументыПриходаВидОперацииКонтекстноеМеню" id="263"/>
+													<ExtendedTooltip name="ДокументыПриходаВидОперацииРасширеннаяПодсказка" id="264"/>
+												</LabelField>
+												<LabelField name="ДокументыПриходаОрганизация" id="265">
+													<DataPath>ДокументыПрихода.ДокументОснованиеОрганизация</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Организация</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Організація</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДокументыПриходаОрганизацияКонтекстноеМеню" id="266"/>
+													<ExtendedTooltip name="ДокументыПриходаОрганизацияРасширеннаяПодсказка" id="267"/>
+												</LabelField>
+												<LabelField name="ДокументыПриходаСклад" id="268">
+													<DataPath>ДокументыПрихода.ДокументОснованиеСклад</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Склад</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Склад</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДокументыПриходаСкладКонтекстноеМеню" id="269"/>
+													<ExtendedTooltip name="ДокументыПриходаСкладРасширеннаяПодсказка" id="270"/>
+												</LabelField>
+												<LabelField name="ДокументыПриходаКонтрагент" id="271">
+													<DataPath>ДокументыПрихода.ДокументОснованиеКонтрагент</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Контрагент</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Контрагент</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДокументыПриходаКонтрагентКонтекстноеМеню" id="272"/>
+													<ExtendedTooltip name="ДокументыПриходаКонтрагентРасширеннаяПодсказка" id="273"/>
+												</LabelField>
+												<LabelField name="ДокументыПриходаПодразделение" id="283">
+													<DataPath>ДокументыПрихода.ДокументОснованиеПодразделение</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подразделение</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Підрозділ</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДокументыПриходаПодразделениеКонтекстноеМеню" id="284"/>
+													<ExtendedTooltip name="ДокументыПриходаПодразделениеРасширеннаяПодсказка" id="285"/>
+												</LabelField>
+												<LabelField name="ДокументыПриходаКомментарий" id="286">
+													<DataPath>ДокументыПрихода.ДокументОснованиеКомментарий</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Комментарий</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Коментар</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДокументыПриходаКомментарийКонтекстноеМеню" id="287"/>
+													<ExtendedTooltip name="ДокументыПриходаКомментарийРасширеннаяПодсказка" id="288"/>
+												</LabelField>
+												<LabelField name="ДокументыПриходаОтветственный" id="289">
+													<DataPath>ДокументыПрихода.ДокументОснованиеОтветственный</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ответственный</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>uk</v8:lang>
+															<v8:content>Відповідальний</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДокументыПриходаОтветственныйКонтекстноеМеню" id="290"/>
+													<ExtendedTooltip name="ДокументыПриходаОтветственныйРасширеннаяПодсказка" id="291"/>
+												</LabelField>
+												<LabelField name="ДокументыПриходаКоличествоДокументовПеремещения" id="570">
+													<DataPath>ДокументыПрихода.КоличествоДокументовПеремещения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>КолвоДокументов</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДокументыПриходаКоличествоДокументовПеремещенияКонтекстноеМеню" id="571"/>
+													<ExtendedTooltip name="ДокументыПриходаКоличествоДокументовПеремещенияРасширеннаяПодсказка" id="572"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="грДокументыПоступления" id="72">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документы поступления</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Документи надходження</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр документы поступления</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Collapsible</Behavior>
+									<CollapsedRepresentationTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документы поступления</v8:content>
+										</v8:item>
+									</CollapsedRepresentationTitle>
+									<ExtendedTooltip name="грДокументыПоступленияРасширеннаяПодсказка" id="73"/>
+									<ChildItems>
+										<Table name="ДокументыПоступления" id="74">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<DataPath>ДокументыПоступления</DataPath>
+											<RowPictureDataPath>ДокументыПоступления.DefaultPicture</RowPictureDataPath>
+											<CommandSet>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Create</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>Post</ExcludedCommand>
+												<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+												<ExcludedCommand>UndoPosting</ExcludedCommand>
+											</CommandSet>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<ContextMenu name="ДокументыПоступленияКонтекстноеМеню" id="75"/>
+											<AutoCommandBar name="ДокументыПоступленияКоманднаяПанель" id="76">
+												<ChildItems>
+													<Button name="ДокументыПоступленияСоздатьВводОС" id="374">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.СоздатьВводОС</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Создать ввод ОС</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>uk</v8:lang>
+																<v8:content>Створити введення ОС</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ДокументыПоступленияСоздатьВводОСРасширеннаяПодсказка" id="375"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ДокументыПоступленияРасширеннаяПодсказка" id="77"/>
+											<SearchStringAddition name="ДокументыПоступленияСтрокаПоиска" id="78">
+												<AdditionSource>
+													<Item>ДокументыПоступления</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДокументыПоступленияСтрокаПоискаКонтекстноеМеню" id="79"/>
+												<ExtendedTooltip name="ДокументыПоступленияСтрокаПоискаРасширеннаяПодсказка" id="80"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ДокументыПоступленияСостояниеПросмотра" id="81">
+												<AdditionSource>
+													<Item>ДокументыПоступления</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДокументыПоступленияСостояниеПросмотраКонтекстноеМеню" id="82"/>
+												<ExtendedTooltip name="ДокументыПоступленияСостояниеПросмотраРасширеннаяПодсказка" id="83"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ДокументыПоступленияУправлениеПоиском" id="84">
+												<AdditionSource>
+													<Item>ДокументыПоступления</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ДокументыПоступленияУправлениеПоискомКонтекстноеМеню" id="85"/>
+												<ExtendedTooltip name="ДокументыПоступленияУправлениеПоискомРасширеннаяПодсказка" id="86"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateRow">ДокументыПоступленияПриАктивизацииСтроки</Event>
+											</Events>
+											<ChildItems>
+												<LabelField name="ДокументыПоступленияСсылка" id="295">
+													<DataPath>ДокументыПоступления.Ref</DataPath>
+													<ContextMenu name="ДокументыПоступленияСсылкаКонтекстноеМеню" id="296"/>
+													<ExtendedTooltip name="ДокументыПоступленияСсылкаРасширеннаяПодсказка" id="297"/>
+												</LabelField>
+												<LabelField name="ДокументыПоступленияДата" id="87">
+													<DataPath>ДокументыПоступления.Date</DataPath>
+													<ContextMenu name="ДокументыПоступленияДатаКонтекстноеМеню" id="88"/>
+													<ExtendedTooltip name="ДокументыПоступленияДатаРасширеннаяПодсказка" id="89"/>
+												</LabelField>
+												<LabelField name="ДокументыПоступленияНомер" id="90">
+													<DataPath>ДокументыПоступления.Number</DataPath>
+													<ContextMenu name="ДокументыПоступленияНомерКонтекстноеМеню" id="91"/>
+													<ExtendedTooltip name="ДокументыПоступленияНомерРасширеннаяПодсказка" id="92"/>
+												</LabelField>
+												<LabelField name="ДокументыПоступленияВидПоступления" id="96">
+													<DataPath>ДокументыПоступления.ВидПоступления</DataPath>
+													<ContextMenu name="ДокументыПоступленияВидПоступленияКонтекстноеМеню" id="97"/>
+													<ExtendedTooltip name="ДокументыПоступленияВидПоступленияРасширеннаяПодсказка" id="98"/>
+												</LabelField>
+												<LabelField name="ДокументыПоступленияКомментарий" id="108">
+													<DataPath>ДокументыПоступления.Комментарий</DataPath>
+													<ContextMenu name="ДокументыПоступленияКомментарийКонтекстноеМеню" id="109"/>
+													<ExtendedTooltip name="ДокументыПоступленияКомментарийРасширеннаяПодсказка" id="110"/>
+												</LabelField>
+												<LabelField name="ДокументыПоступленияКонтрагент" id="111">
+													<DataPath>ДокументыПоступления.Контрагент</DataPath>
+													<ContextMenu name="ДокументыПоступленияКонтрагентКонтекстноеМеню" id="112"/>
+													<ExtendedTooltip name="ДокументыПоступленияКонтрагентРасширеннаяПодсказка" id="113"/>
+												</LabelField>
+												<LabelField name="ДокументыПоступленияОрганизация" id="123">
+													<DataPath>ДокументыПоступления.Организация</DataPath>
+													<ContextMenu name="ДокументыПоступленияОрганизацияКонтекстноеМеню" id="124"/>
+													<ExtendedTooltip name="ДокументыПоступленияОрганизацияРасширеннаяПодсказка" id="125"/>
+												</LabelField>
+												<LabelField name="ДокументыПоступленияОтветственный" id="126">
+													<DataPath>ДокументыПоступления.Ответственный</DataPath>
+													<ContextMenu name="ДокументыПоступленияОтветственныйКонтекстноеМеню" id="127"/>
+													<ExtendedTooltip name="ДокументыПоступленияОтветственныйРасширеннаяПодсказка" id="128"/>
+												</LabelField>
+												<LabelField name="ДокументыПоступленияПодразделение" id="138">
+													<DataPath>ДокументыПоступления.Подразделение</DataPath>
+													<ContextMenu name="ДокументыПоступленияПодразделениеКонтекстноеМеню" id="139"/>
+													<ExtendedTooltip name="ДокументыПоступленияПодразделениеРасширеннаяПодсказка" id="140"/>
+												</LabelField>
+												<LabelField name="ДокументыПоступленияСкладОрдер" id="147">
+													<DataPath>ДокументыПоступления.СкладОрдер</DataPath>
+													<ContextMenu name="ДокументыПоступленияСкладОрдерКонтекстноеМеню" id="148"/>
+													<ExtendedTooltip name="ДокументыПоступленияСкладОрдерРасширеннаяПодсказка" id="149"/>
+												</LabelField>
+												<LabelField name="ДокументыПоступленияВидОперации" id="162">
+													<DataPath>ДокументыПоступления.ВидОперации</DataPath>
+													<ContextMenu name="ДокументыПоступленияВидОперацииКонтекстноеМеню" id="163"/>
+													<ExtendedTooltip name="ДокументыПоступленияВидОперацииРасширеннаяПодсказка" id="164"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="грПодвалГориз" id="376">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр подвал гориз</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр подвал гориз</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="грПодвалГоризРасширеннаяПодсказка" id="377"/>
+							<ChildItems>
+								<UsualGroup name="ВводВЭксплуатацию" id="568">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ввод в эксплуатацию</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Введення в експлуатацію</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ввод в эксплуатацию</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Collapsible</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ВводВЭксплуатациюРасширеннаяПодсказка" id="569"/>
+									<ChildItems>
+										<Table name="ДокВводОС" id="378">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<DataPath>ДокВводОС</DataPath>
+											<RowPictureDataPath>ДокВводОС.DefaultPicture</RowPictureDataPath>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<ContextMenu name="ДокВводОСКонтекстноеМеню" id="379"/>
+											<AutoCommandBar name="ДокВводОСКоманднаяПанель" id="380">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ДокВводОСРасширеннаяПодсказка" id="381"/>
+											<SearchStringAddition name="ДокВводОССтрокаПоиска" id="382">
+												<AdditionSource>
+													<Item>ДокВводОС</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДокВводОССтрокаПоискаКонтекстноеМеню" id="383"/>
+												<ExtendedTooltip name="ДокВводОССтрокаПоискаРасширеннаяПодсказка" id="384"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ДокВводОССостояниеПросмотра" id="385">
+												<AdditionSource>
+													<Item>ДокВводОС</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ДокВводОССостояниеПросмотраКонтекстноеМеню" id="386"/>
+												<ExtendedTooltip name="ДокВводОССостояниеПросмотраРасширеннаяПодсказка" id="387"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ДокВводОСУправлениеПоиском" id="388">
+												<AdditionSource>
+													<Item>ДокВводОС</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ДокВводОСУправлениеПоискомКонтекстноеМеню" id="389"/>
+												<ExtendedTooltip name="ДокВводОСУправлениеПоискомРасширеннаяПодсказка" id="390"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ДокВводОСДата" id="391">
+													<DataPath>ДокВводОС.Date</DataPath>
+													<ContextMenu name="ДокВводОСДатаКонтекстноеМеню" id="392"/>
+													<ExtendedTooltip name="ДокВводОСДатаРасширеннаяПодсказка" id="393"/>
+												</LabelField>
+												<LabelField name="ДокВводОСНомер" id="394">
+													<DataPath>ДокВводОС.Number</DataPath>
+													<ContextMenu name="ДокВводОСНомерКонтекстноеМеню" id="395"/>
+													<ExtendedTooltip name="ДокВводОСНомерРасширеннаяПодсказка" id="396"/>
+												</LabelField>
+												<LabelField name="ДокВводОСВидОперации" id="397">
+													<DataPath>ДокВводОС.ВидОперации</DataPath>
+													<ContextMenu name="ДокВводОСВидОперацииКонтекстноеМеню" id="398"/>
+													<ExtendedTooltip name="ДокВводОСВидОперацииРасширеннаяПодсказка" id="399"/>
+												</LabelField>
+												<LabelField name="ДокВводОСГрафикАмортизацииПоГодуБУ" id="400">
+													<DataPath>ДокВводОС.ГрафикАмортизацииПоГодуБУ</DataPath>
+													<ContextMenu name="ДокВводОСГрафикАмортизацииПоГодуБУКонтекстноеМеню" id="401"/>
+													<ExtendedTooltip name="ДокВводОСГрафикАмортизацииПоГодуБУРасширеннаяПодсказка" id="402"/>
+												</LabelField>
+												<LabelField name="ДокВводОСКомментарий" id="403">
+													<DataPath>ДокВводОС.Комментарий</DataPath>
+													<ContextMenu name="ДокВводОСКомментарийКонтекстноеМеню" id="404"/>
+													<ExtendedTooltip name="ДокВводОСКомментарийРасширеннаяПодсказка" id="405"/>
+												</LabelField>
+												<LabelField name="ДокВводОСМОЛБУ" id="406">
+													<DataPath>ДокВводОС.МОЛБУ</DataPath>
+													<ContextMenu name="ДокВводОСМОЛБУКонтекстноеМеню" id="407"/>
+													<ExtendedTooltip name="ДокВводОСМОЛБУРасширеннаяПодсказка" id="408"/>
+												</LabelField>
+												<CheckBoxField name="ДокВводОСНачислятьАмортизациюБУ" id="409">
+													<DataPath>ДокВводОС.НачислятьАмортизациюБУ</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДокВводОСНачислятьАмортизациюБУКонтекстноеМеню" id="410"/>
+													<ExtendedTooltip name="ДокВводОСНачислятьАмортизациюБУРасширеннаяПодсказка" id="411"/>
+												</CheckBoxField>
+												<CheckBoxField name="ДокВводОСНачислятьАмортизациюНУ" id="412">
+													<DataPath>ДокВводОС.НачислятьАмортизациюНУ</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДокВводОСНачислятьАмортизациюНУКонтекстноеМеню" id="413"/>
+													<ExtendedTooltip name="ДокВводОСНачислятьАмортизациюНУРасширеннаяПодсказка" id="414"/>
+												</CheckBoxField>
+												<LabelField name="ДокВводОСНоменклатура" id="415">
+													<DataPath>ДокВводОС.Номенклатура</DataPath>
+													<ContextMenu name="ДокВводОСНоменклатураКонтекстноеМеню" id="416"/>
+													<ExtendedTooltip name="ДокВводОСНоменклатураРасширеннаяПодсказка" id="417"/>
+												</LabelField>
+												<LabelField name="ДокВводОСОбъектСтроительства" id="418">
+													<DataPath>ДокВводОС.ОбъектСтроительства</DataPath>
+													<ContextMenu name="ДокВводОСОбъектСтроительстваКонтекстноеМеню" id="419"/>
+													<ExtendedTooltip name="ДокВводОСОбъектСтроительстваРасширеннаяПодсказка" id="420"/>
+												</LabelField>
+												<LabelField name="ДокВводОССобытиеОС" id="421">
+													<DataPath>ДокВводОС.СобытиеОС</DataPath>
+													<ContextMenu name="ДокВводОССобытиеОСКонтекстноеМеню" id="422"/>
+													<ExtendedTooltip name="ДокВводОССобытиеОСРасширеннаяПодсказка" id="423"/>
+												</LabelField>
+												<LabelField name="ДокВводОСОрганизация" id="424">
+													<DataPath>ДокВводОС.Организация</DataPath>
+													<ContextMenu name="ДокВводОСОрганизацияКонтекстноеМеню" id="425"/>
+													<ExtendedTooltip name="ДокВводОСОрганизацияРасширеннаяПодсказка" id="426"/>
+												</LabelField>
+												<LabelField name="ДокВводОСОтветственный" id="427">
+													<DataPath>ДокВводОС.Ответственный</DataPath>
+													<ContextMenu name="ДокВводОСОтветственныйКонтекстноеМеню" id="428"/>
+													<ExtendedTooltip name="ДокВводОСОтветственныйРасширеннаяПодсказка" id="429"/>
+												</LabelField>
+												<CheckBoxField name="ДокВводОСУДАЛИТЬОтражатьВНалоговомУчете" id="430">
+													<DataPath>ДокВводОС.УДАЛИТЬОтражатьВНалоговомУчете</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДокВводОСУДАЛИТЬОтражатьВНалоговомУчетеКонтекстноеМеню" id="431"/>
+													<ExtendedTooltip name="ДокВводОСУДАЛИТЬОтражатьВНалоговомУчетеРасширеннаяПодсказка" id="432"/>
+												</CheckBoxField>
+												<LabelField name="ДокВводОСПараметрВыработкиБУ" id="433">
+													<DataPath>ДокВводОС.ПараметрВыработкиБУ</DataPath>
+													<ContextMenu name="ДокВводОСПараметрВыработкиБУКонтекстноеМеню" id="434"/>
+													<ExtendedTooltip name="ДокВводОСПараметрВыработкиБУРасширеннаяПодсказка" id="435"/>
+												</LabelField>
+												<LabelField name="ДокВводОСПодразделениеОрганизации" id="436">
+													<DataPath>ДокВводОС.ПодразделениеОрганизации</DataPath>
+													<ContextMenu name="ДокВводОСПодразделениеОрганизацииКонтекстноеМеню" id="437"/>
+													<ExtendedTooltip name="ДокВводОСПодразделениеОрганизацииРасширеннаяПодсказка" id="438"/>
+												</LabelField>
+												<LabelField name="ДокВводОСПредполагаемыйОбъемПродукцииБУ" id="439">
+													<DataPath>ДокВводОС.ПредполагаемыйОбъемПродукцииБУ</DataPath>
+													<ContextMenu name="ДокВводОСПредполагаемыйОбъемПродукцииБУКонтекстноеМеню" id="440"/>
+													<ExtendedTooltip name="ДокВводОСПредполагаемыйОбъемПродукцииБУРасширеннаяПодсказка" id="441"/>
+												</LabelField>
+												<LabelField name="ДокВводОССклад" id="442">
+													<DataPath>ДокВводОС.Склад</DataPath>
+													<ContextMenu name="ДокВводОССкладКонтекстноеМеню" id="443"/>
+													<ExtendedTooltip name="ДокВводОССкладРасширеннаяПодсказка" id="444"/>
+												</LabelField>
+												<LabelField name="ДокВводОССоставОсновногоСредства" id="445">
+													<DataPath>ДокВводОС.СоставОсновногоСредства</DataPath>
+													<ContextMenu name="ДокВводОССоставОсновногоСредстваКонтекстноеМеню" id="446"/>
+													<ExtendedTooltip name="ДокВводОССоставОсновногоСредстваРасширеннаяПодсказка" id="447"/>
+												</LabelField>
+												<LabelField name="ДокВводОССпособНачисленияАмортизацииБУ" id="448">
+													<DataPath>ДокВводОС.СпособНачисленияАмортизацииБУ</DataPath>
+													<ContextMenu name="ДокВводОССпособНачисленияАмортизацииБУКонтекстноеМеню" id="449"/>
+													<ExtendedTooltip name="ДокВводОССпособНачисленияАмортизацииБУРасширеннаяПодсказка" id="450"/>
+												</LabelField>
+												<LabelField name="ДокВводОССпособыОтраженияРасходовПоАмортизации" id="451">
+													<DataPath>ДокВводОС.СпособыОтраженияРасходовПоАмортизации</DataPath>
+													<ContextMenu name="ДокВводОССпособыОтраженияРасходовПоАмортизацииКонтекстноеМеню" id="452"/>
+													<ExtendedTooltip name="ДокВводОССпособыОтраженияРасходовПоАмортизацииРасширеннаяПодсказка" id="453"/>
+												</LabelField>
+												<LabelField name="ДокВводОССрокПолезногоИспользованияБУ" id="454">
+													<DataPath>ДокВводОС.СрокПолезногоИспользованияБУ</DataPath>
+													<ContextMenu name="ДокВводОССрокПолезногоИспользованияБУКонтекстноеМеню" id="455"/>
+													<ExtendedTooltip name="ДокВводОССрокПолезногоИспользованияБУРасширеннаяПодсказка" id="456"/>
+												</LabelField>
+												<LabelField name="ДокВводОССтоимостьБУ" id="457">
+													<DataPath>ДокВводОС.СтоимостьБУ</DataPath>
+													<ContextMenu name="ДокВводОССтоимостьБУКонтекстноеМеню" id="458"/>
+													<ExtendedTooltip name="ДокВводОССтоимостьБУРасширеннаяПодсказка" id="459"/>
+												</LabelField>
+												<LabelField name="ДокВводОССтоимостьНУ" id="460">
+													<DataPath>ДокВводОС.СтоимостьНУ</DataPath>
+													<ContextMenu name="ДокВводОССтоимостьНУКонтекстноеМеню" id="461"/>
+													<ExtendedTooltip name="ДокВводОССтоимостьНУРасширеннаяПодсказка" id="462"/>
+												</LabelField>
+												<LabelField name="ДокВводОССчетНачисленияАмортизацииБУ" id="463">
+													<DataPath>ДокВводОС.СчетНачисленияАмортизацииБУ</DataPath>
+													<ContextMenu name="ДокВводОССчетНачисленияАмортизацииБУКонтекстноеМеню" id="464"/>
+													<ExtendedTooltip name="ДокВводОССчетНачисленияАмортизацииБУРасширеннаяПодсказка" id="465"/>
+												</LabelField>
+												<LabelField name="ДокВводОССчетУчетаБУ" id="466">
+													<DataPath>ДокВводОС.СчетУчетаБУ</DataPath>
+													<ContextMenu name="ДокВводОССчетУчетаБУКонтекстноеМеню" id="467"/>
+													<ExtendedTooltip name="ДокВводОССчетУчетаБУРасширеннаяПодсказка" id="468"/>
+												</LabelField>
+												<LabelField name="ДокВводОССчетУчетаБУВнеоборотногоАктива" id="469">
+													<DataPath>ДокВводОС.СчетУчетаБУВнеоборотногоАктива</DataPath>
+													<ContextMenu name="ДокВводОССчетУчетаБУВнеоборотногоАктиваКонтекстноеМеню" id="470"/>
+													<ExtendedTooltip name="ДокВводОССчетУчетаБУВнеоборотногоАктиваРасширеннаяПодсказка" id="471"/>
+												</LabelField>
+												<LabelField name="ДокВводОСУДАЛИТЬСчетУчетаНУ" id="472">
+													<DataPath>ДокВводОС.УДАЛИТЬСчетУчетаНУ</DataPath>
+													<ContextMenu name="ДокВводОСУДАЛИТЬСчетУчетаНУКонтекстноеМеню" id="473"/>
+													<ExtendedTooltip name="ДокВводОСУДАЛИТЬСчетУчетаНУРасширеннаяПодсказка" id="474"/>
+												</LabelField>
+												<LabelField name="ДокВводОСНалоговоеНазначение" id="475">
+													<DataPath>ДокВводОС.НалоговоеНазначение</DataPath>
+													<ContextMenu name="ДокВводОСНалоговоеНазначениеКонтекстноеМеню" id="476"/>
+													<ExtendedTooltip name="ДокВводОСНалоговоеНазначениеРасширеннаяПодсказка" id="477"/>
+												</LabelField>
+												<LabelField name="ДокВводОСЛиквидационнаяСтоимостьБУ" id="478">
+													<DataPath>ДокВводОС.ЛиквидационнаяСтоимостьБУ</DataPath>
+													<ContextMenu name="ДокВводОСЛиквидационнаяСтоимостьБУКонтекстноеМеню" id="479"/>
+													<ExtendedTooltip name="ДокВводОСЛиквидационнаяСтоимостьБУРасширеннаяПодсказка" id="480"/>
+												</LabelField>
+												<LabelField name="ДокВводОСНалоговаяГруппаОС" id="481">
+													<DataPath>ДокВводОС.НалоговаяГруппаОС</DataPath>
+													<ContextMenu name="ДокВводОСНалоговаяГруппаОСКонтекстноеМеню" id="482"/>
+													<ExtendedTooltip name="ДокВводОСНалоговаяГруппаОСРасширеннаяПодсказка" id="483"/>
+												</LabelField>
+												<CheckBoxField name="ДокВводОСУДАЛИТЬУчитываетсяКакЗапасНУ" id="484">
+													<DataPath>ДокВводОС.УДАЛИТЬУчитываетсяКакЗапасНУ</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДокВводОСУДАЛИТЬУчитываетсяКакЗапасНУКонтекстноеМеню" id="485"/>
+													<ExtendedTooltip name="ДокВводОСУДАЛИТЬУчитываетсяКакЗапасНУРасширеннаяПодсказка" id="486"/>
+												</CheckBoxField>
+												<LabelField name="ДокВводОСУДАЛИТЬСтатьяНалоговыхДеклараций" id="487">
+													<DataPath>ДокВводОС.УДАЛИТЬСтатьяНалоговыхДеклараций</DataPath>
+													<ContextMenu name="ДокВводОСУДАЛИТЬСтатьяНалоговыхДекларацийКонтекстноеМеню" id="488"/>
+													<ExtendedTooltip name="ДокВводОСУДАЛИТЬСтатьяНалоговыхДекларацийРасширеннаяПодсказка" id="489"/>
+												</LabelField>
+												<LabelField name="ДокВводОССубконтоБУ1" id="490">
+													<DataPath>ДокВводОС.СубконтоБУ1</DataPath>
+													<ContextMenu name="ДокВводОССубконтоБУ1КонтекстноеМеню" id="491"/>
+													<ExtendedTooltip name="ДокВводОССубконтоБУ1РасширеннаяПодсказка" id="492"/>
+												</LabelField>
+												<LabelField name="ДокВводОССубконтоБУ2" id="493">
+													<DataPath>ДокВводОС.СубконтоБУ2</DataPath>
+													<ContextMenu name="ДокВводОССубконтоБУ2КонтекстноеМеню" id="494"/>
+													<ExtendedTooltip name="ДокВводОССубконтоБУ2РасширеннаяПодсказка" id="495"/>
+												</LabelField>
+												<LabelField name="ДокВводОССубконтоБУ3" id="496">
+													<DataPath>ДокВводОС.СубконтоБУ3</DataPath>
+													<ContextMenu name="ДокВводОССубконтоБУ3КонтекстноеМеню" id="497"/>
+													<ExtendedTooltip name="ДокВводОССубконтоБУ3РасширеннаяПодсказка" id="498"/>
+												</LabelField>
+												<LabelField name="ДокВводОСПредседательКомиссии" id="499">
+													<DataPath>ДокВводОС.ПредседательКомиссии</DataPath>
+													<ContextMenu name="ДокВводОСПредседательКомиссииКонтекстноеМеню" id="500"/>
+													<ExtendedTooltip name="ДокВводОСПредседательКомиссииРасширеннаяПодсказка" id="501"/>
+												</LabelField>
+												<LabelField name="ДокВводОСПервыйЧленКомиссии" id="502">
+													<DataPath>ДокВводОС.ПервыйЧленКомиссии</DataPath>
+													<ContextMenu name="ДокВводОСПервыйЧленКомиссииКонтекстноеМеню" id="503"/>
+													<ExtendedTooltip name="ДокВводОСПервыйЧленКомиссииРасширеннаяПодсказка" id="504"/>
+												</LabelField>
+												<LabelField name="ДокВводОСВторойЧленКомиссии" id="505">
+													<DataPath>ДокВводОС.ВторойЧленКомиссии</DataPath>
+													<ContextMenu name="ДокВводОСВторойЧленКомиссииКонтекстноеМеню" id="506"/>
+													<ExtendedTooltip name="ДокВводОСВторойЧленКомиссииРасширеннаяПодсказка" id="507"/>
+												</LabelField>
+												<LabelField name="ДокВводОСТретийЧленКомиссии" id="508">
+													<DataPath>ДокВводОС.ТретийЧленКомиссии</DataPath>
+													<ContextMenu name="ДокВводОСТретийЧленКомиссииКонтекстноеМеню" id="509"/>
+													<ExtendedTooltip name="ДокВводОСТретийЧленКомиссииРасширеннаяПодсказка" id="510"/>
+												</LabelField>
+												<CheckBoxField name="ДокВводОСОтражатьВБухгалтерскомУчете" id="511">
+													<DataPath>ДокВводОС.ОтражатьВБухгалтерскомУчете</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДокВводОСОтражатьВБухгалтерскомУчетеКонтекстноеМеню" id="512"/>
+													<ExtendedTooltip name="ДокВводОСОтражатьВБухгалтерскомУчетеРасширеннаяПодсказка" id="513"/>
+												</CheckBoxField>
+												<CheckBoxField name="ДокВводОСОтражатьВУправленческомУчете" id="514">
+													<DataPath>ДокВводОС.ОтражатьВУправленческомУчете</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДокВводОСОтражатьВУправленческомУчетеКонтекстноеМеню" id="515"/>
+													<ExtendedTooltip name="ДокВводОСОтражатьВУправленческомУчетеРасширеннаяПодсказка" id="516"/>
+												</CheckBoxField>
+												<LabelField name="ДокВводОСПодразделение" id="517">
+													<DataPath>ДокВводОС.Подразделение</DataPath>
+													<ContextMenu name="ДокВводОСПодразделениеКонтекстноеМеню" id="518"/>
+													<ExtendedTooltip name="ДокВводОСПодразделениеРасширеннаяПодсказка" id="519"/>
+												</LabelField>
+												<CheckBoxField name="ДокВводОСНачислятьАмортизациюВТекущемМесяце" id="520">
+													<DataPath>ДокВводОС.НачислятьАмортизациюВТекущемМесяце</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДокВводОСНачислятьАмортизациюВТекущемМесяцеКонтекстноеМеню" id="521"/>
+													<ExtendedTooltip name="ДокВводОСНачислятьАмортизациюВТекущемМесяцеРасширеннаяПодсказка" id="522"/>
+												</CheckBoxField>
+												<LabelField name="ДокВводОССтоимостьУУ" id="523">
+													<DataPath>ДокВводОС.СтоимостьУУ</DataPath>
+													<ContextMenu name="ДокВводОССтоимостьУУКонтекстноеМеню" id="524"/>
+													<ExtendedTooltip name="ДокВводОССтоимостьУУРасширеннаяПодсказка" id="525"/>
+												</LabelField>
+												<LabelField name="ДокВводОСЛиквидационнаяСтоимостьУУ" id="526">
+													<DataPath>ДокВводОС.ЛиквидационнаяСтоимостьУУ</DataPath>
+													<ContextMenu name="ДокВводОСЛиквидационнаяСтоимостьУУКонтекстноеМеню" id="527"/>
+													<ExtendedTooltip name="ДокВводОСЛиквидационнаяСтоимостьУУРасширеннаяПодсказка" id="528"/>
+												</LabelField>
+												<LabelField name="ДокВводОСХарактеристикаНоменклатуры" id="529">
+													<DataPath>ДокВводОС.ХарактеристикаНоменклатуры</DataPath>
+													<ContextMenu name="ДокВводОСХарактеристикаНоменклатурыКонтекстноеМеню" id="530"/>
+													<ExtendedTooltip name="ДокВводОСХарактеристикаНоменклатурыРасширеннаяПодсказка" id="531"/>
+												</LabelField>
+												<LabelField name="ДокВводОССерияНоменклатуры" id="532">
+													<DataPath>ДокВводОС.СерияНоменклатуры</DataPath>
+													<ContextMenu name="ДокВводОССерияНоменклатурыКонтекстноеМеню" id="533"/>
+													<ExtendedTooltip name="ДокВводОССерияНоменклатурыРасширеннаяПодсказка" id="534"/>
+												</LabelField>
+												<LabelField name="ДокВводОСНоменклатурнаяПозиция" id="535">
+													<DataPath>ДокВводОС.НоменклатурнаяПозиция</DataPath>
+													<ContextMenu name="ДокВводОСНоменклатурнаяПозицияКонтекстноеМеню" id="536"/>
+													<ExtendedTooltip name="ДокВводОСНоменклатурнаяПозицияРасширеннаяПодсказка" id="537"/>
+												</LabelField>
+												<LabelField name="ДокВводОССрокПолезногоИспользованияНУ" id="538">
+													<DataPath>ДокВводОС.СрокПолезногоИспользованияНУ</DataPath>
+													<ContextMenu name="ДокВводОССрокПолезногоИспользованияНУКонтекстноеМеню" id="539"/>
+													<ExtendedTooltip name="ДокВводОССрокПолезногоИспользованияНУРасширеннаяПодсказка" id="540"/>
+												</LabelField>
+												<LabelField name="ДокВводОСНалоговоеНазначениеОборудования" id="541">
+													<DataPath>ДокВводОС.НалоговоеНазначениеОборудования</DataPath>
+													<ContextMenu name="ДокВводОСНалоговоеНазначениеОборудованияКонтекстноеМеню" id="542"/>
+													<ExtendedTooltip name="ДокВводОСНалоговоеНазначениеОборудованияРасширеннаяПодсказка" id="543"/>
+												</LabelField>
+												<LabelField name="ДокВводОССчетУчетаДооценокОС" id="544">
+													<DataPath>ДокВводОС.СчетУчетаДооценокОС</DataPath>
+													<ContextMenu name="ДокВводОССчетУчетаДооценокОСКонтекстноеМеню" id="545"/>
+													<ExtendedTooltip name="ДокВводОССчетУчетаДооценокОСРасширеннаяПодсказка" id="546"/>
+												</LabelField>
+												<LabelField name="ДокВводОССдал" id="547">
+													<DataPath>ДокВводОС.Сдал</DataPath>
+													<ContextMenu name="ДокВводОССдалКонтекстноеМеню" id="548"/>
+													<ExtendedTooltip name="ДокВводОССдалРасширеннаяПодсказка" id="549"/>
+												</LabelField>
+												<LabelField name="ДокВводОСПринял" id="550">
+													<DataPath>ДокВводОС.Принял</DataPath>
+													<ContextMenu name="ДокВводОСПринялКонтекстноеМеню" id="551"/>
+													<ExtendedTooltip name="ДокВводОСПринялРасширеннаяПодсказка" id="552"/>
+												</LabelField>
+												<LabelField name="ДокВводОССпособНачисленияАмортизацииНУ" id="553">
+													<DataPath>ДокВводОС.СпособНачисленияАмортизацииНУ</DataPath>
+													<ContextMenu name="ДокВводОССпособНачисленияАмортизацииНУКонтекстноеМеню" id="554"/>
+													<ExtendedTooltip name="ДокВводОССпособНачисленияАмортизацииНУРасширеннаяПодсказка" id="555"/>
+												</LabelField>
+												<LabelField name="ДокВводОСДокументПоступления" id="556">
+													<DataPath>ДокВводОС.ДокументПоступления</DataPath>
+													<ContextMenu name="ДокВводОСДокументПоступленияКонтекстноеМеню" id="557"/>
+													<ExtendedTooltip name="ДокВводОСДокументПоступленияРасширеннаяПодсказка" id="558"/>
+												</LabelField>
+												<CheckBoxField name="ДокВводОСРучнаяКорректировка" id="559">
+													<DataPath>ДокВводОС.РучнаяКорректировка</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ДокВводОСРучнаяКорректировкаКонтекстноеМеню" id="560"/>
+													<ExtendedTooltip name="ДокВводОСРучнаяКорректировкаРасширеннаяПодсказка" id="561"/>
+												</CheckBoxField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+								<Pages name="грДокументыПеремещенияПередача" id="602">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр документы перемещения передача</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр документы перемещения передача</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="грДокументыПеремещенияПередачаРасширеннаяПодсказка" id="603"/>
+									<ChildItems>
+										<Page name="ПеремещениеОС" id="566">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Перемещение ОС</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>uk</v8:lang>
+													<v8:content>Переміщення ОЗ</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Перемещение ОС</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>HorizontalIfPossible</Group>
+											<ExtendedTooltip name="ПеремещениеОСРасширеннаяПодсказка" id="567"/>
+											<ChildItems>
+												<Table name="ДокументыПеремещенияОС" id="307">
+													<UseAlternationRowColor>true</UseAlternationRowColor>
+													<EnableStartDrag>true</EnableStartDrag>
+													<DataPath>ДокументыПеремещенияОС</DataPath>
+													<RowPictureDataPath>ДокументыПеремещенияОС.DefaultPicture</RowPictureDataPath>
+													<AutoRefresh>false</AutoRefresh>
+													<AutoRefreshPeriod>60</AutoRefreshPeriod>
+													<Period>
+														<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+														<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+														<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+													</Period>
+													<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+													<RestoreCurrentRow>false</RestoreCurrentRow>
+													<TopLevelParent xsi:nil="true"/>
+													<ShowRoot>true</ShowRoot>
+													<AllowRootChoice>false</AllowRootChoice>
+													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<ContextMenu name="ДокументыПеремещенияОСКонтекстноеМеню" id="308"/>
+													<AutoCommandBar name="ДокументыПеремещенияОСКоманднаяПанель" id="309">
+														<Autofill>false</Autofill>
+													</AutoCommandBar>
+													<ExtendedTooltip name="ДокументыПеремещенияОСРасширеннаяПодсказка" id="310"/>
+													<SearchStringAddition name="ДокументыПеремещенияОССтрокаПоиска" id="311">
+														<AdditionSource>
+															<Item>ДокументыПеремещенияОС</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ДокументыПеремещенияОССтрокаПоискаКонтекстноеМеню" id="312"/>
+														<ExtendedTooltip name="ДокументыПеремещенияОССтрокаПоискаРасширеннаяПодсказка" id="313"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ДокументыПеремещенияОССостояниеПросмотра" id="314">
+														<AdditionSource>
+															<Item>ДокументыПеремещенияОС</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ДокументыПеремещенияОССостояниеПросмотраКонтекстноеМеню" id="315"/>
+														<ExtendedTooltip name="ДокументыПеремещенияОССостояниеПросмотраРасширеннаяПодсказка" id="316"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ДокументыПеремещенияОСУправлениеПоиском" id="317">
+														<AdditionSource>
+															<Item>ДокументыПеремещенияОС</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ДокументыПеремещенияОСУправлениеПоискомКонтекстноеМеню" id="318"/>
+														<ExtendedTooltip name="ДокументыПеремещенияОСУправлениеПоискомРасширеннаяПодсказка" id="319"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<LabelField name="ДокументыПеремещенияОСДата" id="320">
+															<DataPath>ДокументыПеремещенияОС.Date</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСДатаКонтекстноеМеню" id="321"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСДатаРасширеннаяПодсказка" id="322"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСНомер" id="323">
+															<DataPath>ДокументыПеремещенияОС.Number</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСНомерКонтекстноеМеню" id="324"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСНомерРасширеннаяПодсказка" id="325"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСОрганизация" id="326">
+															<DataPath>ДокументыПеремещенияОС.Организация</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСОрганизацияКонтекстноеМеню" id="327"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСОрганизацияРасширеннаяПодсказка" id="328"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСКомментарий" id="329">
+															<DataPath>ДокументыПеремещенияОС.Комментарий</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСКомментарийКонтекстноеМеню" id="330"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСКомментарийРасширеннаяПодсказка" id="331"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСОтветственный" id="332">
+															<DataPath>ДокументыПеремещенияОС.Ответственный</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСОтветственныйКонтекстноеМеню" id="333"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСОтветственныйРасширеннаяПодсказка" id="334"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСПодразделениеОрганизации" id="335">
+															<DataPath>ДокументыПеремещенияОС.ПодразделениеОрганизации</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСПодразделениеОрганизацииКонтекстноеМеню" id="336"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСПодразделениеОрганизацииРасширеннаяПодсказка" id="337"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСМОЛОрганизации" id="338">
+															<DataPath>ДокументыПеремещенияОС.МОЛОрганизации</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСМОЛОрганизацииКонтекстноеМеню" id="339"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСМОЛОрганизацииРасширеннаяПодсказка" id="340"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОССобытиеОС" id="341">
+															<DataPath>ДокументыПеремещенияОС.СобытиеОС</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОССобытиеОСКонтекстноеМеню" id="342"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОССобытиеОСРасширеннаяПодсказка" id="343"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСПредседательКомиссии" id="344">
+															<DataPath>ДокументыПеремещенияОС.ПредседательКомиссии</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСПредседательКомиссииКонтекстноеМеню" id="345"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСПредседательКомиссииРасширеннаяПодсказка" id="346"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСПервыйЧленКомиссии" id="347">
+															<DataPath>ДокументыПеремещенияОС.ПервыйЧленКомиссии</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСПервыйЧленКомиссииКонтекстноеМеню" id="348"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСПервыйЧленКомиссииРасширеннаяПодсказка" id="349"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСВторойЧленКомиссии" id="350">
+															<DataPath>ДокументыПеремещенияОС.ВторойЧленКомиссии</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСВторойЧленКомиссииКонтекстноеМеню" id="351"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСВторойЧленКомиссииРасширеннаяПодсказка" id="352"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСТретийЧленКомиссии" id="353">
+															<DataPath>ДокументыПеремещенияОС.ТретийЧленКомиссии</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСТретийЧленКомиссииКонтекстноеМеню" id="354"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСТретийЧленКомиссииРасширеннаяПодсказка" id="355"/>
+														</LabelField>
+														<CheckBoxField name="ДокументыПеремещенияОСОтражатьВБухгалтерскомУчете" id="356">
+															<DataPath>ДокументыПеремещенияОС.ОтражатьВБухгалтерскомУчете</DataPath>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДокументыПеремещенияОСОтражатьВБухгалтерскомУчетеКонтекстноеМеню" id="357"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСОтражатьВБухгалтерскомУчетеРасширеннаяПодсказка" id="358"/>
+														</CheckBoxField>
+														<CheckBoxField name="ДокументыПеремещенияОСОтражатьВУправленческомУчете" id="359">
+															<DataPath>ДокументыПеремещенияОС.ОтражатьВУправленческомУчете</DataPath>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДокументыПеремещенияОСОтражатьВУправленческомУчетеКонтекстноеМеню" id="360"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСОтражатьВУправленческомУчетеРасширеннаяПодсказка" id="361"/>
+														</CheckBoxField>
+														<LabelField name="ДокументыПеремещенияОСПодразделение" id="362">
+															<DataPath>ДокументыПеремещенияОС.Подразделение</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСПодразделениеКонтекстноеМеню" id="363"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСПодразделениеРасширеннаяПодсказка" id="364"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОССдал" id="365">
+															<DataPath>ДокументыПеремещенияОС.Сдал</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОССдалКонтекстноеМеню" id="366"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОССдалРасширеннаяПодсказка" id="367"/>
+														</LabelField>
+														<LabelField name="ДокументыПеремещенияОСПринял" id="368">
+															<DataPath>ДокументыПеремещенияОС.Принял</DataPath>
+															<ContextMenu name="ДокументыПеремещенияОСПринялКонтекстноеМеню" id="369"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСПринялРасширеннаяПодсказка" id="370"/>
+														</LabelField>
+														<CheckBoxField name="ДокументыПеремещенияОСРучнаяКорректировка" id="371">
+															<DataPath>ДокументыПеремещенияОС.РучнаяКорректировка</DataPath>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДокументыПеремещенияОСРучнаяКорректировкаКонтекстноеМеню" id="372"/>
+															<ExtendedTooltip name="ДокументыПеремещенияОСРучнаяКорректировкаРасширеннаяПодсказка" id="373"/>
+														</CheckBoxField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</Page>
+										<Page name="ПередачаМалоценки" id="604">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Передача малоценки</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Передача малоценки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ПередачаМалоценкиРасширеннаяПодсказка" id="605"/>
+											<ChildItems>
+												<Table name="ДокументыПередачаМалоценки" id="606">
+													<UseAlternationRowColor>true</UseAlternationRowColor>
+													<EnableStartDrag>true</EnableStartDrag>
+													<DataPath>ДокументыПередачаМалоценки</DataPath>
+													<RowPictureDataPath>ДокументыПередачаМалоценки.DefaultPicture</RowPictureDataPath>
+													<AutoRefresh>false</AutoRefresh>
+													<AutoRefreshPeriod>60</AutoRefreshPeriod>
+													<Period>
+														<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+														<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+														<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+													</Period>
+													<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+													<RestoreCurrentRow>false</RestoreCurrentRow>
+													<TopLevelParent xsi:nil="true"/>
+													<ShowRoot>true</ShowRoot>
+													<AllowRootChoice>false</AllowRootChoice>
+													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<ContextMenu name="ДокументыПередачаМалоценкиКонтекстноеМеню" id="607"/>
+													<AutoCommandBar name="ДокументыПередачаМалоценкиКоманднаяПанель" id="608">
+														<Autofill>false</Autofill>
+													</AutoCommandBar>
+													<ExtendedTooltip name="ДокументыПередачаМалоценкиРасширеннаяПодсказка" id="609"/>
+													<SearchStringAddition name="ДокументыПередачаМалоценкиСтрокаПоиска" id="610">
+														<AdditionSource>
+															<Item>ДокументыПередачаМалоценки</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ДокументыПередачаМалоценкиСтрокаПоискаКонтекстноеМеню" id="611"/>
+														<ExtendedTooltip name="ДокументыПередачаМалоценкиСтрокаПоискаРасширеннаяПодсказка" id="612"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ДокументыПередачаМалоценкиСостояниеПросмотра" id="613">
+														<AdditionSource>
+															<Item>ДокументыПередачаМалоценки</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ДокументыПередачаМалоценкиСостояниеПросмотраКонтекстноеМеню" id="614"/>
+														<ExtendedTooltip name="ДокументыПередачаМалоценкиСостояниеПросмотраРасширеннаяПодсказка" id="615"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ДокументыПередачаМалоценкиУправлениеПоиском" id="616">
+														<AdditionSource>
+															<Item>ДокументыПередачаМалоценки</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ДокументыПередачаМалоценкиУправлениеПоискомКонтекстноеМеню" id="617"/>
+														<ExtendedTooltip name="ДокументыПередачаМалоценкиУправлениеПоискомРасширеннаяПодсказка" id="618"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<LabelField name="ДокументыПередачаМалоценкиДата" id="619">
+															<DataPath>ДокументыПередачаМалоценки.Date</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиДатаКонтекстноеМеню" id="620"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиДатаРасширеннаяПодсказка" id="621"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиНомер" id="622">
+															<DataPath>ДокументыПередачаМалоценки.Number</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиНомерКонтекстноеМеню" id="623"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиНомерРасширеннаяПодсказка" id="624"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиОрганизация" id="625">
+															<DataPath>ДокументыПередачаМалоценки.Организация</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиОрганизацияКонтекстноеМеню" id="626"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиОрганизацияРасширеннаяПодсказка" id="627"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиПодразделениеОрганизации" id="628">
+															<DataPath>ДокументыПередачаМалоценки.ПодразделениеОрганизации</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиПодразделениеОрганизацииКонтекстноеМеню" id="629"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиПодразделениеОрганизацииРасширеннаяПодсказка" id="630"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиКомментарий" id="631">
+															<DataPath>ДокументыПередачаМалоценки.Комментарий</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиКомментарийКонтекстноеМеню" id="632"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиКомментарийРасширеннаяПодсказка" id="633"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиОтветственный" id="634">
+															<DataPath>ДокументыПередачаМалоценки.Ответственный</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиОтветственныйКонтекстноеМеню" id="635"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиОтветственныйРасширеннаяПодсказка" id="636"/>
+														</LabelField>
+														<CheckBoxField name="ДокументыПередачаМалоценкиУказыватьПартию" id="637">
+															<DataPath>~ДокументыПередачаМалоценки.УказыватьПартию</DataPath>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДокументыПередачаМалоценкиУказыватьПартиюКонтекстноеМеню" id="638"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиУказыватьПартиюРасширеннаяПодсказка" id="639"/>
+														</CheckBoxField>
+														<LabelField name="ДокументыПередачаМалоценкиФизЛицоКуда" id="640">
+															<DataPath>~ДокументыПередачаМалоценки.ФизЛицоКуда</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиФизЛицоКудаКонтекстноеМеню" id="641"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиФизЛицоКудаРасширеннаяПодсказка" id="642"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиОснование" id="643">
+															<DataPath>ДокументыПередачаМалоценки.Основание</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиОснованиеКонтекстноеМеню" id="644"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиОснованиеРасширеннаяПодсказка" id="645"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиЧерезКого" id="646">
+															<DataPath>ДокументыПередачаМалоценки.ЧерезКого</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиЧерезКогоКонтекстноеМеню" id="647"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиЧерезКогоРасширеннаяПодсказка" id="648"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиОтпускРазрешил" id="649">
+															<DataPath>ДокументыПередачаМалоценки.ОтпускРазрешил</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиОтпускРазрешилКонтекстноеМеню" id="650"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиОтпускРазрешилРасширеннаяПодсказка" id="651"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиПредседательКомиссии" id="652">
+															<DataPath>ДокументыПередачаМалоценки.ПредседательКомиссии</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиПредседательКомиссииКонтекстноеМеню" id="653"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиПредседательКомиссииРасширеннаяПодсказка" id="654"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиПервыйЧленКомиссии" id="655">
+															<DataPath>ДокументыПередачаМалоценки.ПервыйЧленКомиссии</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиПервыйЧленКомиссииКонтекстноеМеню" id="656"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиПервыйЧленКомиссииРасширеннаяПодсказка" id="657"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиВторойЧленКомиссии" id="658">
+															<DataPath>ДокументыПередачаМалоценки.ВторойЧленКомиссии</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиВторойЧленКомиссииКонтекстноеМеню" id="659"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиВторойЧленКомиссииРасширеннаяПодсказка" id="660"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиТретийЧленКомиссии" id="661">
+															<DataPath>ДокументыПередачаМалоценки.ТретийЧленКомиссии</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиТретийЧленКомиссииКонтекстноеМеню" id="662"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиТретийЧленКомиссииРасширеннаяПодсказка" id="663"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиПодразделение" id="664">
+															<DataPath>ДокументыПередачаМалоценки.Подразделение</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиПодразделениеКонтекстноеМеню" id="665"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиПодразделениеРасширеннаяПодсказка" id="666"/>
+														</LabelField>
+														<CheckBoxField name="ДокументыПередачаМалоценкиОтражатьВУправленческомУчете" id="667">
+															<DataPath>ДокументыПередачаМалоценки.ОтражатьВУправленческомУчете</DataPath>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДокументыПередачаМалоценкиОтражатьВУправленческомУчетеКонтекстноеМеню" id="668"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиОтражатьВУправленческомУчетеРасширеннаяПодсказка" id="669"/>
+														</CheckBoxField>
+														<CheckBoxField name="ДокументыПередачаМалоценкиОтражатьВБухгалтерскомУчете" id="670">
+															<DataPath>ДокументыПередачаМалоценки.ОтражатьВБухгалтерскомУчете</DataPath>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДокументыПередачаМалоценкиОтражатьВБухгалтерскомУчетеКонтекстноеМеню" id="671"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиОтражатьВБухгалтерскомУчетеРасширеннаяПодсказка" id="672"/>
+														</CheckBoxField>
+														<LabelField name="ДокументыПередачаМалоценкиПодразделениеКому" id="673">
+															<DataPath>ДокументыПередачаМалоценки.ПодразделениеКому</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиПодразделениеКомуКонтекстноеМеню" id="674"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиПодразделениеКомуРасширеннаяПодсказка" id="675"/>
+														</LabelField>
+														<LabelField name="ДокументыПередачаМалоценкиСклад" id="676">
+															<DataPath>ДокументыПередачаМалоценки.Склад</DataPath>
+															<ContextMenu name="ДокументыПередачаМалоценкиСкладКонтекстноеМеню" id="677"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиСкладРасширеннаяПодсказка" id="678"/>
+														</LabelField>
+														<CheckBoxField name="ДокументыПередачаМалоценкиРучнаяКорректировка" id="679">
+															<DataPath>ДокументыПередачаМалоценки.РучнаяКорректировка</DataPath>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ДокументыПередачаМалоценкиРучнаяКорректировкаКонтекстноеМеню" id="680"/>
+															<ExtendedTooltip name="ДокументыПередачаМалоценкиРучнаяКорректировкаРасширеннаяПодсказка" id="681"/>
+														</CheckBoxField>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтчет" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Структура подчиненности</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Структура підпорядкованості</v8:content>
+						</v8:item>
+					</Title>
+					<Height>8</Height>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаОтчетExtendedTooltip" id="22"/>
+					<ChildItems>
+						<Table name="ДеревоДокументов" id="23">
+							<Representation>Tree</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДеревоДокументов</DataPath>
+							<RowPictureDataPath>ДеревоДокументов.ИндексПиктограммы</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.СостоянияДокумента</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</RowsPicture>
+							<TreeSpecialSearch>false</TreeSpecialSearch>
+							<ContextMenu name="ДеревоДокументовКонтекстноеМеню" id="24"/>
+							<AutoCommandBar name="ДеревоДокументовКоманднаяПанель" id="25">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоДокументовРасширеннаяПодсказка" id="26"/>
+							<SearchStringAddition name="ДеревоДокументовСтрокаПоиска" id="27">
+								<AdditionSource>
+									<Item>ДеревоДокументов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоДокументовСтрокаПоискаКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="ДеревоДокументовСтрокаПоискаРасширеннаяПодсказка" id="29"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоДокументовСостояниеПросмотра" id="30">
+								<AdditionSource>
+									<Item>ДеревоДокументов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоДокументовСостояниеПросмотраКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="ДеревоДокументовСостояниеПросмотраРасширеннаяПодсказка" id="32"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоДокументовУправлениеПоиском" id="33">
+								<AdditionSource>
+									<Item>ДеревоДокументов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоДокументовУправлениеПоискомКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="ДеревоДокументовУправлениеПоискомРасширеннаяПодсказка" id="35"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ДеревоДокументовПриАктивизацииСтроки</Event>
+								<Event name="BeforeRowChange">ДеревоДокументовПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ДеревоДокументовИндексПиктограммы" id="298">
+									<DataPath>ДеревоДокументов.ИндексПиктограммы</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДокументовИндексПиктограммыКонтекстноеМеню" id="299"/>
+									<ExtendedTooltip name="ДеревоДокументовИндексПиктограммыРасширеннаяПодсказка" id="300"/>
+								</InputField>
+								<InputField name="ДеревоДокументовДокументПредставление" id="36">
+									<DataPath>ДеревоДокументов.ДокументПредставление</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Документ</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>uk</v8:lang>
+											<v8:content>Документ</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоДокументовДокументПредставлениеКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ДеревоДокументовДокументПредставлениеРасширеннаяПодсказка" id="38"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="грТовары" id="600">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Товары</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр товары</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="грТоварыРасширеннаяПодсказка" id="601"/>
+							<ChildItems>
+								<Table name="тчТовары" id="575">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>тчТовары</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="тчТоварыКонтекстноеМеню" id="576"/>
+									<AutoCommandBar name="тчТоварыКоманднаяПанель" id="577">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="тчТоварыРасширеннаяПодсказка" id="578"/>
+									<SearchStringAddition name="тчТоварыСтрокаПоиска" id="579">
+										<AdditionSource>
+											<Item>тчТовары</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="тчТоварыСтрокаПоискаКонтекстноеМеню" id="580"/>
+										<ExtendedTooltip name="тчТоварыСтрокаПоискаРасширеннаяПодсказка" id="581"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="тчТоварыСостояниеПросмотра" id="582">
+										<AdditionSource>
+											<Item>тчТовары</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="тчТоварыСостояниеПросмотраКонтекстноеМеню" id="583"/>
+										<ExtendedTooltip name="тчТоварыСостояниеПросмотраРасширеннаяПодсказка" id="584"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="тчТоварыУправлениеПоиском" id="585">
+										<AdditionSource>
+											<Item>тчТовары</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="тчТоварыУправлениеПоискомКонтекстноеМеню" id="586"/>
+										<ExtendedTooltip name="тчТоварыУправлениеПоискомРасширеннаяПодсказка" id="587"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="тчТоварыНоменклатура" id="588">
+											<DataPath>тчТовары.Номенклатура</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="тчТоварыНоменклатураКонтекстноеМеню" id="589"/>
+											<ExtendedTooltip name="тчТоварыНоменклатураРасширеннаяПодсказка" id="590"/>
+										</InputField>
+										<InputField name="тчТоварыСерия" id="591">
+											<DataPath>тчТовары.СерияНоменклатуры</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="тчТоварыСерияКонтекстноеМеню" id="592"/>
+											<ExtendedTooltip name="тчТоварыСерияРасширеннаяПодсказка" id="593"/>
+										</InputField>
+										<InputField name="тчТоварыКоличество" id="594">
+											<DataPath>тчТовары.Количество</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="тчТоварыКоличествоКонтекстноеМеню" id="595"/>
+											<ExtendedTooltip name="тчТоварыКоличествоРасширеннаяПодсказка" id="596"/>
+										</InputField>
+										<InputField name="тчТоварыСчетУчетаБУ" id="597">
+											<DataPath>тчТовары.СчетУчетаБУ</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="тчТоварыСчетУчетаБУКонтекстноеМеню" id="598"/>
+											<ExtendedTooltip name="тчТоварыСчетУчетаБУРасширеннаяПодсказка" id="599"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочееМестоРаботыСМалоценкой</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДеревоДокументов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДокументПредставление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Проведен" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдаления" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИндексПиктограммы" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс пиктограммы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДеревоПодчиненныеДокументы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево подчиненные документы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Дерево підпорядковані документи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Представление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представлення</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Посилання</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Проведен" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведен</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Проведено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдаления" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Позначка вилучення</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДеревоРодительскиеДокументы" id="4">
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Представление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Представлення</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Посилання</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Проведен" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведен</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Проведено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдаления" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Позначка вилучення</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДокументСсылка" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ ссылка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Документ посилання</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументСсылкаИсточник" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ ссылка источник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументыПоступления" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы поступления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ПоступлениеТоваровУслуг</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДокументыПрихода" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы прихода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументыПрихода.ДокументОснование.Ссылка КАК ДокументыПриходаСсылка,
+	ДокументыПрихода.ДокументОснование.ВерсияДанных,
+	ДокументыПрихода.ДокументОснование.ПометкаУдаления,
+	ДокументыПрихода.ДокументОснование.Номер,
+	ДокументыПрихода.ДокументОснование.Дата,
+	ДокументыПрихода.ДокументОснование.Проведен,
+	ДокументыПрихода.ДокументОснование.ВидОперации,
+	ДокументыПрихода.ДокументОснование.Организация,
+	ДокументыПрихода.ДокументОснование.Склад,
+	ДокументыПрихода.ДокументОснование.Контрагент,
+	ДокументыПрихода.ДокументОснование.НомерВходящегоДокумента,
+	ДокументыПрихода.ДокументОснование.ДатаВходящегоДокумента,
+	ДокументыПрихода.ДокументОснование.ФизЛицо,
+	ДокументыПрихода.ДокументОснование.Подразделение,
+	ВЫРАЗИТЬ(ДокументыПрихода.ДокументОснование.Комментарий КАК СТРОКА(100)) КАК ДокументОснованиеКомментарий,
+	ДокументыПрихода.ДокументОснование.Ответственный,
+	ДокументыПрихода.ДокументОснование.БезПраваПродажи,
+	ДокументыПрихода.ДокументОснование.ДокументПеремещения,
+	ДокументыПрихода.ДокументОснование.ДокументОснования,
+	ДокументыПрихода.ДокументОснование.ОтветственныйДоп,
+	ДокументыПрихода.ДокументОснование.НомерТТН,
+	ДокументыПрихода.ДокументОснование.ТипДоставки,
+	ДокументыПрихода.ДокументОснование.ЕстьТТН,
+	ДокументыПрихода.ДокументОснование.РучнаяКорректировка,
+	ДокументыПрихода.ДокументОснование.Представление,
+	ДокументыПрихода.ДокументОснование.МоментВремени,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ПеремещениеОС.Номер) КАК КоличествоДокументовПеремещения
+ИЗ
+	Документ.ПеремещениеТоваров КАК ДокументыПрихода
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПеремещениеОС КАК ПеремещениеОС
+		ПО ДокументыПрихода.Ссылка = ПеремещениеОС.ДокументПеремещения
+ГДЕ
+	ДокументыПрихода.ДокументОснование ССЫЛКА Документ.ПриходныйОрдерНаТовары
+	И ДокументыПрихода.ДокументОснование &lt;&gt; ЗНАЧЕНИЕ(Документ.ПриходныйОрдерНаТовары.ПустаяСсылка)
+
+СГРУППИРОВАТЬ ПО
+	ДокументыПрихода.ДокументОснование.Ссылка,
+	ДокументыПрихода.ДокументОснование.ВерсияДанных,
+	ДокументыПрихода.ДокументОснование.ПометкаУдаления,
+	ДокументыПрихода.ДокументОснование.Номер,
+	ДокументыПрихода.ДокументОснование.Дата,
+	ДокументыПрихода.ДокументОснование.Проведен,
+	ДокументыПрихода.ДокументОснование.ВидОперации,
+	ДокументыПрихода.ДокументОснование.Организация,
+	ДокументыПрихода.ДокументОснование.Склад,
+	ДокументыПрихода.ДокументОснование.Контрагент,
+	ДокументыПрихода.ДокументОснование.НомерВходящегоДокумента,
+	ДокументыПрихода.ДокументОснование.ДатаВходящегоДокумента,
+	ДокументыПрихода.ДокументОснование.ФизЛицо,
+	ДокументыПрихода.ДокументОснование.Подразделение,
+	ДокументыПрихода.ДокументОснование.Ответственный,
+	ДокументыПрихода.ДокументОснование.БезПраваПродажи,
+	ДокументыПрихода.ДокументОснование.ДокументПеремещения,
+	ДокументыПрихода.ДокументОснование.ДокументОснования,
+	ДокументыПрихода.ДокументОснование.ОтветственныйДоп,
+	ДокументыПрихода.ДокументОснование.НомерТТН,
+	ДокументыПрихода.ДокументОснование.ТипДоставки,
+	ДокументыПрихода.ДокументОснование.ЕстьТТН,
+	ДокументыПрихода.ДокументОснование.РучнаяКорректировка,
+	ДокументыПрихода.ДокументОснование.Представление,
+	ДокументыПрихода.ДокументОснование.МоментВремени,
+	ВЫРАЗИТЬ(ДокументыПрихода.ДокументОснование.Комментарий КАК СТРОКА(100))</QueryText>
+				<MainTable>Document.ПеремещениеТоваров</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">КоличествоДокументовПеремещения</dcsset:left>
+									<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#CCFFCC</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДокументыПеремещенияОС" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы перемещения ОС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументПеремещениеОС.Ссылка,
+	ДокументПеремещениеОС.ПометкаУдаления,
+	ДокументПеремещениеОС.Номер,
+	ДокументПеремещениеОС.Дата,
+	ДокументПеремещениеОС.Проведен,
+	ДокументПеремещениеОС.Организация,
+	ДокументПеремещениеОС.Комментарий,
+	ДокументПеремещениеОС.Ответственный,
+	ДокументПеремещениеОС.ПодразделениеОрганизации,
+	ДокументПеремещениеОС.МОЛОрганизации,
+	ДокументПеремещениеОС.СобытиеОС,
+	ДокументПеремещениеОС.ПредседательКомиссии,
+	ДокументПеремещениеОС.ПервыйЧленКомиссии,
+	ДокументПеремещениеОС.ВторойЧленКомиссии,
+	ДокументПеремещениеОС.ТретийЧленКомиссии,
+	ДокументПеремещениеОС.ОтражатьВБухгалтерскомУчете,
+	ДокументПеремещениеОС.ОтражатьВУправленческомУчете,
+	ДокументПеремещениеОС.Подразделение,
+	ДокументПеремещениеОС.Сдал,
+	ДокументПеремещениеОС.Принял,
+	ДокументПеремещениеОС.ДокументПеремещения,
+	ДокументПеремещениеОС.РучнаяКорректировка,
+	ДокументПеремещениеОС.ОС.(
+		Ссылка,
+		НомерСтроки,
+		ОсновноеСредство
+	),
+	ДокументПеремещениеОС.МоментВремени
+ИЗ
+	Документ.ПеремещениеОС КАК ДокументПеремещениеОС</QueryText>
+				<MainTable>Document.ПеремещениеОС</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДокВводОС" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Док ввод ОС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ВводВЭксплуатациюОС</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="тчТовары" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тч товары</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номенклатура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СерияНоменклатуры" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Серия номенклатуры</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Серия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СерииНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СчетУчетаБУ" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет учета БУ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfAccountsRef.Хозрасчетный</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДокументыПередачаМалоценки" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы передача малоценки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДокументПередачаМалоценкиВЭксплуатацию.Ссылка,
+	ДокументПередачаМалоценкиВЭксплуатацию.ПометкаУдаления,
+	ДокументПередачаМалоценкиВЭксплуатацию.Номер,
+	ДокументПередачаМалоценкиВЭксплуатацию.Дата,
+	ДокументПередачаМалоценкиВЭксплуатацию.Проведен,
+	ДокументПередачаМалоценкиВЭксплуатацию.Организация,
+	ДокументПередачаМалоценкиВЭксплуатацию.Склад,
+	ДокументПередачаМалоценкиВЭксплуатацию.Комментарий,
+	ДокументПередачаМалоценкиВЭксплуатацию.Ответственный,
+	ДокументПередачаМалоценкиВЭксплуатацию.ПодразделениеОрганизации,
+	ДокументПередачаМалоценкиВЭксплуатацию.Основание,
+	ДокументПередачаМалоценкиВЭксплуатацию.ЧерезКого,
+	ДокументПередачаМалоценкиВЭксплуатацию.ОтпускРазрешил,
+	ДокументПередачаМалоценкиВЭксплуатацию.Отпустил,
+	ДокументПередачаМалоценкиВЭксплуатацию.ПредседательКомиссии,
+	ДокументПередачаМалоценкиВЭксплуатацию.ПервыйЧленКомиссии,
+	ДокументПередачаМалоценкиВЭксплуатацию.ВторойЧленКомиссии,
+	ДокументПередачаМалоценкиВЭксплуатацию.ТретийЧленКомиссии,
+	ДокументПередачаМалоценкиВЭксплуатацию.ОтражатьВУправленческомУчете,
+	ДокументПередачаМалоценкиВЭксплуатацию.ОтражатьВБухгалтерскомУчете,
+	ДокументПередачаМалоценкиВЭксплуатацию.Подразделение,
+	ДокументПередачаМалоценкиВЭксплуатацию.ПодразделениеКому,
+	ДокументПередачаМалоценкиВЭксплуатацию.ДокументПеремещения,
+	ДокументПередачаМалоценкиВЭксплуатацию.РучнаяКорректировка,
+	ДокументПередачаМалоценкиВЭксплуатацию.МалоценныеАктивы.(
+		Ссылка,
+		НомерСтроки,
+		Номенклатура,
+		НазначениеИспользования,
+		Количество,
+		ФизЛицо,
+		СчетУчетаБУ,
+		УДАЛИТЬСтатьяПриростаУбылиЗапасов,
+		ЕдиницаИзмерения,
+		Коэффициент,
+		СерияНоменклатуры,
+		ХарактеристикаНоменклатуры,
+		НоменклатурнаяПозиция,
+		Качество,
+		НалоговоеНазначение
+	),
+	ДокументПередачаМалоценкиВЭксплуатацию.МоментВремени,
+	ДокументПередачаМалоценкиВЭксплуатацию.ДокументПеремещения КАК ДокументПеремещения1
+ИЗ
+	Документ.ПередачаМалоценкиВЭксплуатацию КАК ДокументПередачаМалоценкиВЭксплуатацию</QueryText>
+				<MainTable>Document.ПередачаМалоценкиВЭксплуатацию</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДокументыПрихода</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДокументыПрихода.КоличествоДокументовПеремещения</dcsset:left>
+						<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#20DE71</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Приходные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приходные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приходные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Приходные</Action>
+		</Command>
+		<Command name="Поступления" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступления</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Надходження</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Поступления</Action>
+		</Command>
+		<Command name="СоздатьЦепочкуДокументовПриход" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать цепочку документов перемещения ОС</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити ланцюжок документів переміщення ОС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать цепочку документов приход</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьЦепочкуДокументовПриход</Action>
+		</Command>
+		<Command name="СоздатьВводОС" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ввод ОС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ввод ОС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьВводОС</Action>
+		</Command>
+		<Command name="СоздатьЦепочкуДокументовПередачаМалоценки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать цепочку документов передача малоценки</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Створити ланцюжок документів передача малоцінки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать цепочку документов приход</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьЦепочкуДокументовПередачаОС</Action>
+		</Command>
+	</Commands>
+</Form>
