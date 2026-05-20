@@ -235,6 +235,11 @@
 									<CommandName>Form.Command.СоздатьПеремещениеТоваров</CommandName>
 									<ExtendedTooltip name="СоздатьПеремещениеТоваровРасширеннаяПодсказка" id="231"/>
 								</Button>
+								<Button name="Установить" id="232">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Установить</CommandName>
+									<ExtendedTooltip name="УстановитьРасширеннаяПодсказка" id="233"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 						<InputField name="ОтветственныйЗаОплату" id="222">
@@ -1462,6 +1467,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьПеремещениеТоваров</Action>
+		</Command>
+		<Command name="Установить" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать перемещение товаров со склада СИ на склад ТестДрайв</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Установить</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
